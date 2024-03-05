@@ -74,27 +74,25 @@ namespace TimeshareManagement.API.Controllers
                 return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
             }
 
-            IEnumerable<ApplicationUser> users = _userRepository.GetAllItem();
-            if (bookingRequest.User != null)
+            if (bookingRequest.User != null && bookingRequest.User.Id != null)
             {
-                bookingRequest.User = users.FirstOrDefault(u => u.Id == bookingRequest.User.Id);
-            }
-            else
-            {
-                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
+                bookingRequest.User = await _userRepository.GetByIdAsync(bookingRequest.User.Id);
+                if (bookingRequest.User == null)
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "User not found." });
+                }
             }
 
-            IEnumerable<Timeshare> timeshares = _timeshareRepository.GetAllItem();
-            if (bookingRequest.Timeshare != null)
+            if (bookingRequest.Timeshare != null && bookingRequest.Timeshare.timeshareId != null)
             {
-                bookingRequest.Timeshare = timeshares.FirstOrDefault(t => t.timeshareId == bookingRequest.Timeshare.timeshareId);
-            }
-            else
-            {
-                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
+                bookingRequest.Timeshare = await _timeshareRepository.GetByIdAsync(bookingRequest.Timeshare.timeshareId);
+                if (bookingRequest.Timeshare == null)
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found." });
+                }
             }
             await _bookingRequestRepository.Create(bookingRequest);
-            
+
             return Ok(new ResponseDTO { Result = bookingRequest, IsSucceed = true, Message = "Booking created successfully" });
         }
         [HttpDelete]

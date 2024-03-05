@@ -9,5 +9,7 @@ namespace TimeshareManagement.DataAccess.Repository.IRepository
 {
     public interface IUserRepository : IRepository<ApplicationUser>
     {
+        Task<ApplicationUser> GetByIdAsync(string id);
+        Task<ApplicationUser> GetByIdAsync(int id);
     }
 }

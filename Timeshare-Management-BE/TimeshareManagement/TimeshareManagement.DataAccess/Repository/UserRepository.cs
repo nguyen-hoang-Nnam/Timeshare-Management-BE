@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +20,16 @@ namespace TimeshareManagement.DataAccess.Repository
         {
             _db = db;
             _mapper = mapper;
+        }
+
+        public async Task<ApplicationUser> GetByIdAsync(string id)
+        {
+            return await _db.Users.FindAsync(id);
+        }
+
+        public async Task<ApplicationUser> GetByIdAsync(int id)
+        {
+            return await _db.Users.FindAsync(id);
         }
     }
 }

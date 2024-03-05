@@ -91,5 +91,22 @@ namespace TimeshareManagement.DataAccess.Repository
         {
             return _db.Set<T>().ToList();
         }
+        
+        public async Task<T> GetById(string id)
+        {
+            return await _dbSet.FindAsync(id);
+        }
+        public async Task<IEnumerable<T>> GetAllItemAsync()
+        {
+            return await _db.Set<T>().ToListAsync();
+        }
+        public async Task<T> GetByIdAsync<TKey>(int id)
+        {
+            return await _db.Set<T>().FindAsync(id);
+        }
+        public async Task<T> GetByIdAsync<TKey>(string id)
+        {
+            return await _db.Set<T>().FindAsync(id);
+        }
     }
 }
