@@ -83,33 +83,31 @@ namespace TimeshareManagement.API.Controllers
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
                 }
                 timeshare.confirmTimeshare = 0;
-                IEnumerable<Place> places = _placeRepository.GetAllItem();
-                if (timeshare.Place != null)
+                if (timeshare.User != null && timeshare.User.Id != null)
                 {
-                    timeshare.Place = places.FirstOrDefault(p => p.placeId == timeshare.Place.placeId);
-                } else
-                {
-                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
-                }
-                IEnumerable<TimeshareStatus> status = _timeshareStatusRepository.GetAllItem();
-                if (timeshare.TimeshareStatus != null)
-                {
-                    timeshare.TimeshareStatus = status.FirstOrDefault(s => s.timeshareStatusId == timeshare.TimeshareStatus.timeshareStatusId);
-                }
-                else
-                {
-                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
-                }
-                IEnumerable<ApplicationUser> user = _userRepository.GetAllItem();
-                if (timeshare.User != null)
-                {
-                    timeshare.User = user.FirstOrDefault(s => s.Id == timeshare.User.Id);
-                }
-                else
-                {
-                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
+                    timeshare.User = await _userRepository.GetByIdAsync(timeshare.User.Id);
+                    if (timeshare.User == null)
+                    {
+                        return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "User not found." });
+                    }
                 }
 
+                if (timeshare.Place != null && timeshare.Place.placeId != null)
+                {
+                    timeshare.Place = await _placeRepository.GetByIdAsync(timeshare.Place.placeId);
+                    if (timeshare.Place == null)
+                    {
+                        return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Place not found." });
+                    }
+                }
+                if (timeshare.TimeshareStatus != null && timeshare.TimeshareStatus.timeshareStatusId != null)
+                {
+                    timeshare.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(timeshare.Place.placeId);
+                    if (timeshare.TimeshareStatus == null)
+                    {
+                        return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
+                    }
+                }
                 await _timeshareRepository.Create(timeshare);
                 return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Create Timeshare successfully. Awaiting confirmation." });
             }
