@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TimeshareManagement.DataAccess.Data;
-using TimeshareManagement.DataAccess.Migrations;
 using TimeshareManagement.DataAccess.Repository;
 using TimeshareManagement.DataAccess.Repository.IRepository;
 using TimeshareManagement.Models.Models;
@@ -78,7 +77,7 @@ namespace TimeshareManagement.API.Controllers
             IEnumerable<ApplicationUser> users = _userRepository.GetAllItem();
             if (bookingRequest.User != null)
             {
-                bookingRequest.User = users.FirstOrDefault(u => u.UserName == bookingRequest.User.UserName);
+                bookingRequest.User = users.FirstOrDefault(u => u.Id == bookingRequest.User.Id);
             }
             else
             {
@@ -88,7 +87,7 @@ namespace TimeshareManagement.API.Controllers
             IEnumerable<Timeshare> timeshares = _timeshareRepository.GetAllItem();
             if (bookingRequest.Timeshare != null)
             {
-                bookingRequest.Timeshare = timeshares.FirstOrDefault(t => t.timeshareName == bookingRequest.Timeshare.timeshareName);
+                bookingRequest.Timeshare = timeshares.FirstOrDefault(t => t.timeshareId == bookingRequest.Timeshare.timeshareId);
             }
             else
             {

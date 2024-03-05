@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace TimeshareManagement.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class init : Migration
+    public partial class updatedata : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -30,6 +30,7 @@ namespace TimeshareManagement.DataAccess.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -48,6 +49,59 @@ namespace TimeshareManagement.DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Places",
+                columns: table => new
+                {
+                    placeId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    placeName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Places", x => x.placeId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "RoomAmenities",
+                columns: table => new
+                {
+                    roomAmenitiesId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    roomAmenitiesName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_RoomAmenities", x => x.roomAmenitiesId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TimesharesDetail",
+                columns: table => new
+                {
+                    timeshareDetailId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Detail = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TimesharesDetail", x => x.timeshareDetailId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TimesharesStatus",
+                columns: table => new
+                {
+                    timeshareStatusId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    timeshareStatusName = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TimesharesStatus", x => x.timeshareStatusId);
                 });
 
             migrationBuilder.CreateTable(
@@ -96,14 +150,14 @@ namespace TimeshareManagement.DataAccess.Migrations
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ProviderKey = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ProviderDisplayName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                    UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    LoginProvider = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ProviderKey = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ProviderDisplayName = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AspNetUserLogins", x => new { x.LoginProvider, x.ProviderKey });
+                    table.PrimaryKey("PK_AspNetUserLogins", x => x.UserId);
                     table.ForeignKey(
                         name: "FK_AspNetUserLogins_AspNetUsers_UserId",
                         column: x => x.UserId,
@@ -156,6 +210,68 @@ namespace TimeshareManagement.DataAccess.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Timeshares",
+                columns: table => new
+                {
+                    timeshareId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    timeshareName = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Price = table.Column<int>(type: "int", nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Detail = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    timeshareStatusId = table.Column<int>(type: "int", nullable: true),
+                    placeId = table.Column<int>(type: "int", nullable: true),
+                    confirmTimeshare = table.Column<int>(type: "int", nullable: true),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Timeshares", x => x.timeshareId);
+                    table.ForeignKey(
+                        name: "FK_Timeshares_AspNetUsers_Id",
+                        column: x => x.Id,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Timeshares_Places_placeId",
+                        column: x => x.placeId,
+                        principalTable: "Places",
+                        principalColumn: "placeId");
+                    table.ForeignKey(
+                        name: "FK_Timeshares_TimesharesStatus_timeshareStatusId",
+                        column: x => x.timeshareStatusId,
+                        principalTable: "TimesharesStatus",
+                        principalColumn: "timeshareStatusId");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "BookingRequests",
+                columns: table => new
+                {
+                    bookingRequestId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    bookingDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    timeshareId = table.Column<int>(type: "int", nullable: true),
+                    Id = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_BookingRequests", x => x.bookingRequestId);
+                    table.ForeignKey(
+                        name: "FK_BookingRequests_AspNetUsers_Id",
+                        column: x => x.Id,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_BookingRequests_Timeshares_timeshareId",
+                        column: x => x.timeshareId,
+                        principalTable: "Timeshares",
+                        principalColumn: "timeshareId");
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -174,11 +290,6 @@ namespace TimeshareManagement.DataAccess.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_AspNetUserLogins_UserId",
-                table: "AspNetUserLogins",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_AspNetUserRoles_RoleId",
                 table: "AspNetUserRoles",
                 column: "RoleId");
@@ -194,6 +305,31 @@ namespace TimeshareManagement.DataAccess.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BookingRequests_Id",
+                table: "BookingRequests",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_BookingRequests_timeshareId",
+                table: "BookingRequests",
+                column: "timeshareId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Timeshares_Id",
+                table: "Timeshares",
+                column: "Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Timeshares_placeId",
+                table: "Timeshares",
+                column: "placeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Timeshares_timeshareStatusId",
+                table: "Timeshares",
+                column: "timeshareStatusId");
         }
 
         /// <inheritdoc />
@@ -215,10 +351,28 @@ namespace TimeshareManagement.DataAccess.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "BookingRequests");
+
+            migrationBuilder.DropTable(
+                name: "RoomAmenities");
+
+            migrationBuilder.DropTable(
+                name: "TimesharesDetail");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
+                name: "Timeshares");
+
+            migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Places");
+
+            migrationBuilder.DropTable(
+                name: "TimesharesStatus");
         }
     }
 }

@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
 using TimeshareManagement.DataAccess.Data;
-using TimeshareManagement.DataAccess.Migrations;
 using TimeshareManagement.DataAccess.Repository;
 using TimeshareManagement.DataAccess.Repository.IRepository;
 using TimeshareManagement.Models.Models;

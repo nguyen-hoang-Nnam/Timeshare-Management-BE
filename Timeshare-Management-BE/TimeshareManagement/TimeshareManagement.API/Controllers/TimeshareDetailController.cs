@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using TimeshareManagement.DataAccess.Data;
-using TimeshareManagement.DataAccess.Migrations;
 using TimeshareManagement.DataAccess.Repository.IRepository;
 using TimeshareManagement.Models.Models;
 using TimeshareManagement.Models.Models.DTO;

@@ -12,8 +12,8 @@ using TimeshareManagement.DataAccess.Data;
 namespace TimeshareManagement.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240304030501_update-timeshare")]
-    partial class updatetimeshare
+    [Migration("20240305042235_update-data")]
+    partial class updatedata
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -297,6 +297,10 @@ namespace TimeshareManagement.DataAccess.Migrations
                     b.Property<string>("Detail")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Image")
                         .HasColumnType("nvarchar(max)");
 
@@ -316,6 +320,8 @@ namespace TimeshareManagement.DataAccess.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("timeshareId");
+
+                    b.HasIndex("Id");
 
                     b.HasIndex("placeId");
 
@@ -427,6 +433,12 @@ namespace TimeshareManagement.DataAccess.Migrations
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.Timeshare", b =>
                 {
+                    b.HasOne("TimeshareManagement.Models.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("TimeshareManagement.Models.Models.Place", "Place")
                         .WithMany()
                         .HasForeignKey("placeId");
@@ -438,6 +450,8 @@ namespace TimeshareManagement.DataAccess.Migrations
                     b.Navigation("Place");
 
                     b.Navigation("TimeshareStatus");
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

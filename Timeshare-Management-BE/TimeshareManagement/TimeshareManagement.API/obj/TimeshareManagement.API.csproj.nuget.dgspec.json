@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj": {}
+    "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj": {}
   },
   "projects": {
-    "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj": {
+    "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj",
+        "projectUniqueName": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj",
         "projectName": "TimeshareManagement.API",
-        "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj",
+        "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\TimeshareManagement.API.csproj",
         "packagesPath": "C:\\Users\\Hoang Nam\\.nuget\\packages\\",
-        "outputPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\obj\\",
+        "outputPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hoang Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj": {
-                "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj"
+              "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj": {
+                "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj"
               },
-              "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
-                "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj"
+              "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
+                "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj"
               },
-              "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj": {
-                "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj"
+              "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj": {
+                "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj"
               }
             }
           }
@@ -135,14 +135,14 @@
         }
       }
     },
-    "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj": {
+    "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj",
+        "projectUniqueName": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj",
         "projectName": "TimeshareManagement.DataAccess",
-        "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj",
+        "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Hoang Nam\\.nuget\\packages\\",
-        "outputPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\obj\\",
+        "outputPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hoang Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -159,11 +159,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
-                "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj"
+              "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
+                "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj"
               },
-              "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj": {
-                "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj"
+              "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj": {
+                "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj"
               }
             }
           }
@@ -248,14 +248,14 @@
         }
       }
     },
-    "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
+    "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj",
+        "projectUniqueName": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj",
         "projectName": "TimeshareManagement.Models",
-        "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj",
+        "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj",
         "packagesPath": "C:\\Users\\Hoang Nam\\.nuget\\packages\\",
-        "outputPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\obj\\",
+        "outputPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hoang Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -358,14 +358,14 @@
         }
       }
     },
-    "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj": {
+    "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj",
+        "projectUniqueName": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj",
         "projectName": "TimeshareManagement.Utility",
-        "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj",
+        "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\TimeshareManagement.Utility.csproj",
         "packagesPath": "C:\\Users\\Hoang Nam\\.nuget\\packages\\",
-        "outputPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\obj\\",
+        "outputPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Hoang Nam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -382,8 +382,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
-                "projectPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj"
+              "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj": {
+                "projectPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareManagement.Models.csproj"
               }
             }
           }
