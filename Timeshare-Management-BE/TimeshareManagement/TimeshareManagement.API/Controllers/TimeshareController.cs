@@ -43,7 +43,7 @@ namespace TimeshareManagement.API.Controllers
             try
             {
                 var timeshare = await _timeshareRepository.GetAll();
-                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Timeshare retrived successfully." });
+                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Timeshare retrieved successfully." });
             }
             catch (Exception ex)
             {
@@ -86,7 +86,7 @@ namespace TimeshareManagement.API.Controllers
                 IEnumerable<Place> places = _placeRepository.GetAllItem();
                 if (timeshare.Place != null)
                 {
-                    timeshare.Place = places.FirstOrDefault(p => p.placeName == timeshare.Place.placeName);
+                    timeshare.Place = places.FirstOrDefault(p => p.placeId == timeshare.Place.placeId);
                 } else
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
@@ -94,7 +94,16 @@ namespace TimeshareManagement.API.Controllers
                 IEnumerable<TimeshareStatus> status = _timeshareStatusRepository.GetAllItem();
                 if (timeshare.TimeshareStatus != null)
                 {
-                    timeshare.TimeshareStatus = status.FirstOrDefault(s => s.timeshareStatusName == timeshare.TimeshareStatus.timeshareStatusName);
+                    timeshare.TimeshareStatus = status.FirstOrDefault(s => s.timeshareStatusId == timeshare.TimeshareStatus.timeshareStatusId);
+                }
+                else
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
+                }
+                IEnumerable<ApplicationUser> user = _userRepository.GetAllItem();
+                if (timeshare.User != null)
+                {
+                    timeshare.User = user.FirstOrDefault(s => s.Id == timeshare.User.Id);
                 }
                 else
                 {
@@ -122,6 +131,7 @@ namespace TimeshareManagement.API.Controllers
                     return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found." });
                 } else
                 {
+                    existingTimeshare.timeshareId = timeshare.timeshareId;
                     existingTimeshare.timeshareName = timeshare.timeshareName;
                     existingTimeshare.Price = timeshare.Price;
                     existingTimeshare.Address = timeshare.Address;
@@ -130,6 +140,7 @@ namespace TimeshareManagement.API.Controllers
                     existingTimeshare.placeId = timeshare.placeId;
                     /*existingTimeshare.Id = timeshare.Id;*/
                     existingTimeshare.timeshareStatusId = timeshare.timeshareStatusId;
+                    existingTimeshare.confirmTimeshare = timeshare.confirmTimeshare;
                     //
                     await _timeshareRepository.Update(existingTimeshare);
                 }

@@ -7,7 +7,6 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
-using TimeshareManagement.DataAccess.Migrations;
 using TimeshareManagement.Models.Models;
 
 namespace TimeshareManagement.DataAccess.Data
