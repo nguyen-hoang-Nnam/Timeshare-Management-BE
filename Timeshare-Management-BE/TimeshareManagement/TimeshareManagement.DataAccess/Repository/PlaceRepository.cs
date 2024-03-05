@@ -19,5 +19,10 @@ namespace TimeshareManagement.DataAccess.Repository
             _db = db;
             _mapper = mapper;
         }
+
+        public async Task<Place> GetByIdAsync(int id)
+        {
+            return await _db.Places.FindAsync(id);
+        }
     }
 }

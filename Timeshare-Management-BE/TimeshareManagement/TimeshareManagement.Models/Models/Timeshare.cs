@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace TimeshareManagement.Models.Models
@@ -22,13 +23,16 @@ namespace TimeshareManagement.Models.Models
 
         public int? timeshareStatusId { get; set; }
         [ForeignKey("timeshareStatusId")]
+        [JsonIgnore]
         public TimeshareStatus? TimeshareStatus { get; set; }
         public int? placeId { get; set; }
         [ForeignKey("placeId")]
+        [JsonIgnore]
         public Place? Place { get; set; }
         public int? confirmTimeshare {  get; set; }
         public string? Id { get; set; }
         [ForeignKey("Id")]
+        [JsonIgnore]
         public ApplicationUser? User { get; set; }
 
     }
