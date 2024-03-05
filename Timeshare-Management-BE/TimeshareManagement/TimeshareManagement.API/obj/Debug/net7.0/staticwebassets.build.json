@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "yHQdK1BsJMUOoGTEkMhv7l/N0lSW9kHhLkRdj9b0kuQ=",
+  "Source": "TimeshareManagement.API",
+  "BasePath": "_content/TimeshareManagement.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

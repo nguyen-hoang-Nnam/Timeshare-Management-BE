@@ -1,0 +1,773 @@
+[
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "TimeshareManagement.Models.Models.DTO.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.AuthController",
+    "Method": "MakeAdmin",
+    "RelativePath": "api/Auth/make-admin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatePermissionDTO",
+        "Type": "TimeshareManagement.Models.Models.DTO.UpdatePermissionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.AuthController",
+    "Method": "MakeOwner",
+    "RelativePath": "api/Auth/make-owner",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatePermissionDTO",
+        "Type": "TimeshareManagement.Models.Models.DTO.UpdatePermissionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.AuthController",
+    "Method": "MakeStaff",
+    "RelativePath": "api/Auth/make-staff",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatePermissionDTO",
+        "Type": "TimeshareManagement.Models.Models.DTO.UpdatePermissionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDTO",
+        "Type": "TimeshareManagement.Models.Models.DTO.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.AuthController",
+    "Method": "SeedRoles",
+    "RelativePath": "api/Auth/send-roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "CreateBookingRequest",
+    "RelativePath": "api/BookingRequest/CreateBookingRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingRequest",
+        "Type": "TimeshareManagement.Models.Models.BookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "DeleteBooking",
+    "RelativePath": "api/BookingRequest/DeletePlace/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "GetAllBookingRequest",
+    "RelativePath": "api/BookingRequest/GetAllBookingRequest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "GetById",
+    "RelativePath": "api/BookingRequest/GetRequestById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "SendEmail",
+    "RelativePath": "api/BookingRequest/SendEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingRequest",
+        "Type": "TimeshareManagement.Models.Models.BookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.PlaceController",
+    "Method": "GetPlace",
+    "RelativePath": "api/Place",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.PlaceController",
+    "Method": "CreatePlace",
+    "RelativePath": "api/Place/CreatePlace",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "place",
+        "Type": "TimeshareManagement.Models.Models.Place",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.PlaceController",
+    "Method": "DeletePlace",
+    "RelativePath": "api/Place/DeletePlace/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.PlaceController",
+    "Method": "GetAllPlace",
+    "RelativePath": "api/Place/GetAllPlace",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.PlaceController",
+    "Method": "GetById",
+    "RelativePath": "api/Place/GetPlaceById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.RoomAmenitiesController",
+    "Method": "GetPlace",
+    "RelativePath": "api/roomAmenities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.RoomAmenitiesController",
+    "Method": "CreateRoom",
+    "RelativePath": "api/roomAmenities/CreateRoomAmenities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roomAmenities",
+        "Type": "TimeshareManagement.Models.Models.RoomAmenities",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.RoomAmenitiesController",
+    "Method": "DeleteRoom",
+    "RelativePath": "api/roomAmenities/DeleteRoomAmenities/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.RoomAmenitiesController",
+    "Method": "GetAllRoomAmenities",
+    "RelativePath": "api/roomAmenities/GetAllRoomAmenities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.RoomAmenitiesController",
+    "Method": "GetById",
+    "RelativePath": "api/roomAmenities/GetRoomAmenitiesById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.RoomAmenitiesController",
+    "Method": "UpdateRoom",
+    "RelativePath": "api/roomAmenities/UpdateRoomAmenities/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "roomAmenities",
+        "Type": "TimeshareManagement.Models.Models.RoomAmenities",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "GetTimeshare",
+    "RelativePath": "api/timeshare",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchPrice",
+        "Type": "System.Nullable\u00601[[System.Decimal, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "ConfirmTimeshare",
+    "RelativePath": "api/timeshare/ConfirmTimeshare",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshareId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "CreateTimeshare",
+    "RelativePath": "api/timeshare/CreateTimeshare",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshare",
+        "Type": "TimeshareManagement.Models.Models.Timeshare",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "DeleteTimeshare",
+    "RelativePath": "api/timeshare/DeleteTimeshare/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "GetAllTimeshare",
+    "RelativePath": "api/timeshare/GetAllTimeshare",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "GetById",
+    "RelativePath": "api/timeshare/GetTimeshareById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "UpdateTimeshare",
+    "RelativePath": "api/timeshare/UpdateTimeshare/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "timeshare",
+        "Type": "TimeshareManagement.Models.Models.Timeshare",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareDetailController",
+    "Method": "CreateTimeshareDetail",
+    "RelativePath": "api/timeshareDetail/CreateTimeshareDetail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshareDetail",
+        "Type": "TimeshareManagement.Models.Models.TimeshareDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareDetailController",
+    "Method": "DeleteTimeshareDetail",
+    "RelativePath": "api/timeshareDetail/DeleteTimeshareDetail/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareDetailController",
+    "Method": "GetAllTimeshareDetail",
+    "RelativePath": "api/timeshareDetail/GetAllTimeshareDetail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareDetailController",
+    "Method": "GetById",
+    "RelativePath": "api/timeshareDetail/GetTimeshareDetailById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareDetailController",
+    "Method": "UpdateTimeshareDetail",
+    "RelativePath": "api/timeshareDetail/UpdateTimeshareDetail/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "timeshareDetail",
+        "Type": "TimeshareManagement.Models.Models.TimeshareDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareStatusController",
+    "Method": "CreateTimeshareStatus",
+    "RelativePath": "api/TimeshareStatus/CreateTimeshareStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshareStatus",
+        "Type": "TimeshareManagement.Models.Models.TimeshareStatus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareStatusController",
+    "Method": "DeleteTimeshareStatus",
+    "RelativePath": "api/TimeshareStatus/DeleteTimeshareStatus/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareStatusController",
+    "Method": "GetAllTimeshareStatus",
+    "RelativePath": "api/TimeshareStatus/GetAllTimeshareStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareStatusController",
+    "Method": "GetById",
+    "RelativePath": "api/TimeshareStatus/GetTimeshareStatusById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareStatusController",
+    "Method": "UpdateTimeshareStatus",
+    "RelativePath": "api/TimeshareStatus/UpdateTimeshareStatus/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "timeshareStatus",
+        "Type": "TimeshareManagement.Models.Models.TimeshareStatus",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "searchName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.UserController",
+    "Method": "DeleteUser",
+    "RelativePath": "api/User/DeleteUser/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.UserController",
+    "Method": "GetAllUser",
+    "RelativePath": "api/User/GetAllUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/User/GetUserById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.UserController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/User/UpdateUser/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "user",
+        "Type": "TimeshareManagement.Models.Models.DTO.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.WeatherForecastController",
+    "Method": "GetAdminRole",
+    "RelativePath": "WeatherForecast/GetAdminRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.WeatherForecastController",
+    "Method": "GetOwnerRole",
+    "RelativePath": "WeatherForecast/GetOwnerRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.WeatherForecastController",
+    "Method": "GetStaffRole",
+    "RelativePath": "WeatherForecast/GetStaffRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.WeatherForecastController",
+    "Method": "GetUserRole",
+    "RelativePath": "WeatherForecast/GetUserRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,701 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\timesharecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\timesharecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\timesharerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\timesharerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\migrations\\20240304030501_update-timeshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\migrations\\20240304030501_update-timeshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\timesharedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\timesharedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\timeshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\timeshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\timesharestatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\timesharestatuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\timesharestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\timesharestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\bookingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\bookingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\bookingrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\bookingrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\timesharedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\timesharedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\timesharedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\timesharedetailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\timesharedetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\timesharedetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\timesharedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\timesharedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-1\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\migrations\\20240303123219_update-d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\migrations\\20240303123219_update-d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 73,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1377497384:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:14:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:7:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:16:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{588470cc-84f8-4a57-9ac4-86bca0625ff4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1928210406:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:350743133:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:10:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:4:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240304030501_update-timeshare.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240304030501_update-timeshare.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240304030501_update-timeshare.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240304030501_update-timeshare.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240304030501_update-timeshare.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T03:05:01.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:44:27.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TimeshareController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAADwv8gAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:24:43.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Timeshare.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:23:08.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingRequestController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAzwFwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T03:58:05.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TimeshareStatusController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:36:42.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimeshareDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:23:49.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TimeshareRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:29:27.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAMAAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:44:31.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TimeshareStatus.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T02:09:02.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BookingRequestRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T13:28:27.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T14:39:20.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20240303123219_update-d.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240303123219_update-d.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240303123219_update-d.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240303123219_update-d.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240303123219_update-d.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:32:19.666Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TimeshareDetail.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:23:35.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:31:14.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TimeshareDetailController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareDetailController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareDetailController.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareDetailController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\TimeshareDetailController.cs",
+              "ViewState": "AQIAAD0AAAAAAAAAAAAkwHEAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:24:22.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TimeshareDetailRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareDetailRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\TimeshareDetailRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareDetailRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\TimeshareDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:24:19.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TimeshareDetailDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-1\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:24:09.678Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:9:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:31:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:32:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:33:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:35:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:36:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:38:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:39:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:40:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:42:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:8:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

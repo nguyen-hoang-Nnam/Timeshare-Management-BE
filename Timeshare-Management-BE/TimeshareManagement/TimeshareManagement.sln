@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeshareManagement.API", "TimeshareManagement.API\TimeshareManagement.API.csproj", "{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeshareManagement.DataAccess", "TimeshareManagement.DataAccess\TimeshareManagement.DataAccess.csproj", "{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeshareManagement.Models", "TimeshareManagement.Models\TimeshareManagement.Models.csproj", "{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeshareManagement.Utility", "TimeshareManagement.Utility\TimeshareManagement.Utility.csproj", "{D4B1779F-41C4-4124-83D6-4CA1F065B40E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}.Release|Any CPU.Build.0 = Release|Any CPU
+		{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4B1779F-41C4-4124-83D6-4CA1F065B40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4B1779F-41C4-4124-83D6-4CA1F065B40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4B1779F-41C4-4124-83D6-4CA1F065B40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4B1779F-41C4-4124-83D6-4CA1F065B40E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49E043D3-30B9-4073-A18B-EE96EEE69340}
+	EndGlobalSection
+EndGlobal
