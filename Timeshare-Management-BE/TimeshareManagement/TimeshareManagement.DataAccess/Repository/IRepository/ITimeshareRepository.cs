@@ -10,5 +10,6 @@ namespace TimeshareManagement.DataAccess.Repository.IRepository
     public interface ITimeshareRepository : IRepository<Timeshare>
     {
         Task<Timeshare> GetByIdAsync(int id);
+        Task<IEnumerable<Timeshare>> GetByUserId(string userId);
     }
 }

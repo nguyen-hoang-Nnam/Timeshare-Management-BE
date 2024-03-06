@@ -26,5 +26,12 @@ namespace TimeshareManagement.DataAccess.Repository
         {
             return await _db.Timeshares.FindAsync(id);
         }
+        public async Task<IEnumerable<Timeshare>> GetByUserId(string userId)
+        {
+            // Assuming there's a property named ApplicationUserId in the Timeshare model
+            return await _db.Timeshares
+                .Where(t => t.User.Id == userId)
+                .ToListAsync();
+        }
     }
 }
