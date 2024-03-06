@@ -71,5 +71,9 @@ namespace TimeshareManagement.DataAccess.Repository
                 .Where(t => t.TimeshareStatus.timeshareStatusId == statusId)
                 .ToListAsync();
         }
+        public async Task<List<Timeshare>> GetAllAsync()
+        {
+            return await _db.Timeshares.ToListAsync();
+        }
     }
 }
