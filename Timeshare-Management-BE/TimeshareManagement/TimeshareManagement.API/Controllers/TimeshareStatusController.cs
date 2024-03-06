@@ -78,7 +78,7 @@ namespace TimeshareManagement.API.Controllers
         }
         [HttpPut]
         [Route("UpdateTimeshareStatus/{id:int}")]
-        [Authorize(Roles = StaticUserRoles.ADMIN)]
+        /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
         public async Task<IActionResult> UpdateTimeshareStatus(int id, [FromBody] TimeshareStatus timeshareStatus)
         {
             try
@@ -103,7 +103,7 @@ namespace TimeshareManagement.API.Controllers
         }
         [HttpDelete]
         [Route("DeleteTimeshareStatus/{id:int}")]
-        [Authorize(Roles = StaticUserRoles.ADMIN)]
+        /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
         public async Task<IActionResult> DeleteTimeshareStatus(int id)
         {
             try

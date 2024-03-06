@@ -23,5 +23,9 @@ namespace TimeshareManagement.Models.Models
         [ForeignKey("Id")]
         [JsonIgnore]
         public ApplicationUser? User { get; set; }
+        public int? timeshareStatusId { get; set; }
+        [ForeignKey("timeshareStatusId")]
+        [JsonIgnore]
+        public TimeshareStatus? TimeshareStatus { get; set; }
     }
 }

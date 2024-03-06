@@ -11,5 +11,8 @@ namespace TimeshareManagement.DataAccess.Repository.IRepository
     {
         Task SendEmailAsync(string toEmail, string subject, string body);
         Task SendBookingConfirmationAsync(BookingRequest bookingRequest);
+        Task<IEnumerable<BookingRequest>> GetByUserId(string userId);
+        Task<BookingRequest> GetByIdAsync(int id);
+        Task<IEnumerable<BookingRequest>> GetByStatusId(int statusId);
     }
 }
