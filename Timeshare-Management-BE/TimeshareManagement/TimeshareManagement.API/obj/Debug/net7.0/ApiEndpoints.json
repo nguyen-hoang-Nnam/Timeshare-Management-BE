@@ -91,6 +91,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "ConfirmBooking",
+    "RelativePath": "api/BookingRequest/ConfirmBooking/{bookingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
     "Method": "CreateBookingRequest",
     "RelativePath": "api/BookingRequest/CreateBookingRequest",
     "HttpMethod": "POST",
@@ -100,6 +116,22 @@
       {
         "Name": "bookingRequest",
         "Type": "TimeshareManagement.Models.Models.BookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "DeclineBooking",
+    "RelativePath": "api/BookingRequest/DeclineTimeshare/{bookingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -444,6 +476,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "DeclineTimeshare",
+    "RelativePath": "api/timeshare/DeclineTimeshare/{timeshareId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshareId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
     "Method": "DeleteTimeshare",
     "RelativePath": "api/timeshare/DeleteTimeshare/{id}",
     "HttpMethod": "DELETE",
@@ -456,6 +504,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "GetActiveTimeshares",
+    "RelativePath": "api/timeshare/GetAllActiveTimeshares",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

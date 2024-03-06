@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TimeshareManagement.Utility")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8660762f1f5da857a390d0e2f8abc2804233f609")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0571e7f26a19a6605d04a4e68cd4a04750d47fe8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TimeshareManagement.Utility")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TimeshareManagement.Utility")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

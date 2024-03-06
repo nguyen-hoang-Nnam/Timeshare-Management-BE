@@ -172,5 +172,69 @@ namespace TimeshareManagement.API.Controllers
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
         }
+        [HttpPost]
+        [Route("ConfirmBooking/{bookingId}")]
+        public async Task<IActionResult> ConfirmBooking(int bookingId)
+        {
+            try
+            {
+                BookingRequest booking = await _bookingRequestRepository.GetById(bookingId);
+                if (booking == null)
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found" });
+                }
+                // Update timeshare status ID directly
+                booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 5 };
+                if (booking.TimeshareStatus != null && booking.TimeshareStatus.timeshareStatusId != null)
+                {
+                    booking.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(booking.TimeshareStatus.timeshareStatusId);
+                    if (booking.TimeshareStatus == null)
+                    {
+                        return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
+                    }
+                }
+
+                // Save changes to the database
+                await _bookingRequestRepository.Update(booking);
+
+                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking confirmed successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
+        [HttpPost]
+        [Route("DeclineTimeshare/{bookingId}")]
+        public async Task<IActionResult> DeclineBooking(int bookingId)
+        {
+            try
+            {
+                BookingRequest booking = await _bookingRequestRepository.GetById(bookingId);
+                if (booking == null)
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found" });
+                }
+                // Update timeshare status ID directly
+                booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 6 };
+                if (booking.TimeshareStatus != null && booking.TimeshareStatus.timeshareStatusId != null)
+                {
+                    booking.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(booking.TimeshareStatus.timeshareStatusId);
+                    if (booking.TimeshareStatus == null)
+                    {
+                        return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
+                    }
+                }
+
+                // Save changes to the database
+                await _bookingRequestRepository.Update(booking);
+
+                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking declined successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
     }
 }
