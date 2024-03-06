@@ -11,5 +11,9 @@ namespace TimeshareManagement.DataAccess.Repository.IRepository
     {
         Task<Timeshare> GetByIdAsync(int id);
         Task<IEnumerable<Timeshare>> GetByUserId(string userId);
+        Task DeleteById(int id);
+        /*Task<Timeshare> GetById(int id);*/
+        Task Update(Timeshare timeshare);
+        Task<IEnumerable<Timeshare>> GetByStatusId(int statusId);
     }
 }

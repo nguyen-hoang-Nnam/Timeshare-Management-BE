@@ -34,7 +34,23 @@ namespace TimeshareManagement.DataAccess.Data
             {
                 b.HasKey(x => x.UserId); // Make sure to specify the primary key
             });
-            /*modelBuilder.Entity<Timeshare>().HasOne(u => u.User).WithMany(t => t.timeshares).HasForeignKey(u => u.Id);*/
+            modelBuilder.Entity<Timeshare>()
+            .HasOne(t => t.TimeshareStatus)
+            .WithMany()
+            .HasForeignKey(t => t.timeshareStatusId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<Timeshare>()
+            .HasOne(t => t.Place)
+            .WithMany()
+            .HasForeignKey(t => t.placeId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+            modelBuilder.Entity<BookingRequest>()
+            .HasOne(br => br.Timeshare)
+            .WithMany()
+            .HasForeignKey(br => br.timeshareId)
+            .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

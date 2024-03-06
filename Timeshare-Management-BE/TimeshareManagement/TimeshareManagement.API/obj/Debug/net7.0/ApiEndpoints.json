@@ -133,6 +133,38 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "GetBookingByStatus",
+    "RelativePath": "api/BookingRequest/GetBookingByStatus/{statusId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "statusId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "GetByUserId",
+    "RelativePath": "api/BookingRequest/GetBookingByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
     "Method": "GetById",
     "RelativePath": "api/BookingRequest/GetRequestById/{id}",
     "HttpMethod": "GET",
@@ -381,7 +413,7 @@
   {
     "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
     "Method": "ConfirmTimeshare",
-    "RelativePath": "api/timeshare/ConfirmTimeshare",
+    "RelativePath": "api/timeshare/ConfirmTimeshare/{timeshareId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -389,7 +421,7 @@
       {
         "Name": "timeshareId",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -463,6 +495,22 @@
       {
         "Name": "userId",
         "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "GetTimesharesByStatus",
+    "RelativePath": "api/timeshare/GetTimesharesByStatus/{statusId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "statusId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

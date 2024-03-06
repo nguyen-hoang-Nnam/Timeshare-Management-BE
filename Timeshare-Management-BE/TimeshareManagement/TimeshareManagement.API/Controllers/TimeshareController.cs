@@ -82,7 +82,7 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
                 }
-                timeshare.confirmTimeshare = 0;
+                timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 4};
                 if (timeshare.User != null && timeshare.User.Id != null)
                 {
                     timeshare.User = await _userRepository.GetByIdAsync(timeshare.User.Id);
@@ -137,7 +137,6 @@ namespace TimeshareManagement.API.Controllers
                     existingTimeshare.placeId = timeshare.placeId;
                     /*existingTimeshare.Id = timeshare.Id;*/
                     existingTimeshare.timeshareStatusId = timeshare.timeshareStatusId;
-                    existingTimeshare.confirmTimeshare = timeshare.confirmTimeshare;
                     //
                     await _timeshareRepository.Update(existingTimeshare);
                 }
@@ -187,7 +186,7 @@ namespace TimeshareManagement.API.Controllers
             }
         }
         [HttpPost]
-        [Route("ConfirmTimeshare")]
+        [Route("ConfirmTimeshare/{timeshareId}")]
         public async Task<IActionResult> ConfirmTimeshare(int timeshareId)
         {
             try
@@ -195,16 +194,28 @@ namespace TimeshareManagement.API.Controllers
                 Timeshare timeshare = await _timeshareRepository.GetById(timeshareId);
                 if (timeshare == null)
                 {
-                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found"});
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found" });
                 }
-                timeshare.confirmTimeshare = 1;
-                await _timeshareRepository.Update(timeshare);
-                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = false, Message = "Timeshare confirmed successfully" });
+
+                if (timeshare.TimeshareStatus != null)
+                {
+                    // Update timeshare status ID directly
+                    timeshare.TimeshareStatus.timeshareStatusId = 5;
+
+                    // Save changes to the database
+                    await _timeshareRepository.Update(timeshare);
+
+                    return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Timeshare confirmed successfully" });
+                }
+                else
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "TimeshareStatus not found." });
+                }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
-            } 
+            }
         }
         [HttpGet]
         [Route("GetTimeshareByUserId/{userId}")]
@@ -223,6 +234,28 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return Ok(new ResponseDTO { Result = timeshares, IsSucceed = true, Message = "Timeshares retrieved successfully." });
                 }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
+        [HttpGet]
+        [Route("GetTimesharesByStatus/{statusId}")]
+        /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
+        public async Task<IActionResult> GetTimesharesByStatus(int statusId)
+        {
+            try
+            {
+                // Retrieve timeshares with the specified statusId
+                var timeshares = await _timeshareRepository.GetByStatusId(statusId);
+
+                if (timeshares == null || !timeshares.Any())
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No timeshares found with the specified statusId." });
+                }
+
+                return Ok(new ResponseDTO { Result = timeshares, IsSucceed = true, Message = "Timeshares retrieved successfully." });
             }
             catch (Exception ex)
             {

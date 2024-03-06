@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
 using TimeshareManagement.DataAccess.Data;
 using TimeshareManagement.DataAccess.Repository;
 using TimeshareManagement.DataAccess.Repository.IRepository;
@@ -19,8 +20,9 @@ namespace TimeshareManagement.API.Controllers
         private readonly IBookingRequestRepository _bookingRequestRepository;
         private readonly IUserRepository _userRepository;
         private readonly ITimeshareRepository _timeshareRepository;
+        private readonly ITimeshareStatusRepository _timeshareStatusRepository;
 
-        public BookingRequestController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IBookingRequestRepository bookingRequestRepository, IUserRepository userRepository, ITimeshareRepository timeshareRepository)
+        public BookingRequestController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IBookingRequestRepository bookingRequestRepository, IUserRepository userRepository, ITimeshareRepository timeshareRepository, ITimeshareStatusRepository timeshareStatusRepository)
         {
             _configuration = configuration;
             _db = db;
@@ -28,6 +30,7 @@ namespace TimeshareManagement.API.Controllers
             _bookingRequestRepository = bookingRequestRepository;
             _userRepository = userRepository;
             _timeshareRepository = timeshareRepository;
+            _timeshareStatusRepository = timeshareStatusRepository;
         }
         [HttpGet]
         [Route("GetAllBookingRequest")]
@@ -73,7 +76,7 @@ namespace TimeshareManagement.API.Controllers
             {
                 return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
             }
-
+            bookingRequest.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 4 };
             if (bookingRequest.User != null && bookingRequest.User.Id != null)
             {
                 bookingRequest.User = await _userRepository.GetByIdAsync(bookingRequest.User.Id);
@@ -89,6 +92,14 @@ namespace TimeshareManagement.API.Controllers
                 if (bookingRequest.Timeshare == null)
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found." });
+                }
+            }
+            if (bookingRequest.TimeshareStatus != null && bookingRequest.TimeshareStatus.timeshareStatusId != null)
+            {
+                bookingRequest.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(bookingRequest.TimeshareStatus.timeshareStatusId);
+                if (bookingRequest.TimeshareStatus == null)
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
                 }
             }
             await _bookingRequestRepository.Create(bookingRequest);
@@ -115,6 +126,51 @@ namespace TimeshareManagement.API.Controllers
         {
             await _bookingRequestRepository.SendBookingConfirmationAsync(bookingRequest);
             return Ok("Send Email successfully");
+        }
+        [HttpGet]
+        [Route("GetBookingByUserId/{userId}")]
+        public async Task<IActionResult> GetByUserId(string userId)
+        {
+            try
+            {
+                // Assuming _timeshareRepository has a method to get timeshares by user ID
+                var booking = await _bookingRequestRepository.GetByUserId(userId);
+
+                if (booking == null || !booking.Any())
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No timeshares found for the user." });
+                }
+                else
+                {
+                    return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Timeshares retrieved successfully." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
+        [HttpGet]
+        [Route("GetBookingByStatus/{statusId}")]
+        /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
+        public async Task<IActionResult> GetBookingByStatus(int statusId)
+        {
+            try
+            {
+                // Retrieve timeshares with the specified statusId
+                var booking = await _bookingRequestRepository.GetByStatusId(statusId);
+
+                if (booking == null || !booking.Any())
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No timeshares found with the specified statusId." });
+                }
+
+                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Timeshares retrieved successfully." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
         }
     }
 }

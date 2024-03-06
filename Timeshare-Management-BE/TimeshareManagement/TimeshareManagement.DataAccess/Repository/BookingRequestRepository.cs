@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using TimeshareManagement.DataAccess.Data;
 using TimeshareManagement.DataAccess.Repository.IRepository;
 using TimeshareManagement.Models.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace TimeshareManagement.DataAccess.Repository
 {
@@ -54,6 +55,24 @@ namespace TimeshareManagement.DataAccess.Repository
                 await client.SendAsync(message);
                 await client.DisconnectAsync(true);
             }
+        }
+        public async Task<IEnumerable<BookingRequest>> GetByUserId(string userId)
+        {
+            // Assuming there's a property named ApplicationUserId in the Timeshare model
+            return await _db.BookingRequests
+                .Where(t => t.User.Id == userId)
+                .ToListAsync();
+        }
+        public async Task<BookingRequest> GetByIdAsync(int id)
+        {
+            return await _db.BookingRequests.FindAsync(id);
+        }
+        public async Task<IEnumerable<BookingRequest>> GetByStatusId(int statusId)
+        {
+            // Assuming there's a property named ApplicationUserId in the Timeshare model
+            return await _db.BookingRequests
+                .Where(t => t.TimeshareStatus.timeshareStatusId == statusId)
+                .ToListAsync();
         }
     }
 }
