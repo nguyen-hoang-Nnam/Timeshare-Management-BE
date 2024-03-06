@@ -454,6 +454,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
+    "Method": "GetByUserId",
+    "RelativePath": "api/timeshare/GetTimeshareByUserId/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.TimeshareController",
     "Method": "UpdateTimeshare",
     "RelativePath": "api/timeshare/UpdateTimeshare/{id}",
     "HttpMethod": "PUT",
