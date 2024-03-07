@@ -108,7 +108,7 @@ namespace TimeshareManagement.API.Controllers
                         return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
                     }
                 }
-                timeshare.ExpirationDate = DateTime.Now.AddMinutes(5);
+                /*timeshare.ExpirationDate = DateTime.Now;*/
                 await _timeshareRepository.Create(timeshare);
                 return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Create Timeshare successfully. Awaiting confirmation." });
             }
@@ -305,7 +305,11 @@ namespace TimeshareManagement.API.Controllers
                 var allTimeshares = await _timeshareRepository.GetAllAsync();
 
                 // Filter timeshares based on the expiration date
-                var activeTimeshares = allTimeshares.Where(t => t.ExpirationDate > DateTime.Now).ToList();
+                /*var activeTimeshares = allTimeshares.Where(t => t.PublicDate > DateTime.Now).ToList();*/
+                var activeTimeshares = allTimeshares
+                .Where(t => t.PublicDate <= DateTime.Now && t.PublicDate.AddMinutes(2) >= DateTime.Now &&
+                        t.timeshareStatusId == 5)
+                .ToList();
 
                 return Ok(new ResponseDTO { Result = activeTimeshares, IsSucceed = true, Message = "Active Timeshares retrieved successfully." });
             }

@@ -14,7 +14,8 @@ namespace TimeshareManagement.Models.Models.DTO
         public int Price { get; set; }
         public string? Address { get; set; }
         public string? Detail {  get; set; }
-        public DateTime ExpirationDate { get; set; }
+        /*public DateTime ExpirationDate { get; set; }*/
+        public DateTime PublicDate { get; set; }
         public TimeshareStatusDTO? TimeshareStatus { get; set; }
         public PlaceDTO? Place { get; set; }
         public int? confirmTimeshare { get; set; }

@@ -299,9 +299,6 @@ namespace TimeshareManagement.DataAccess.Migrations
                     b.Property<string>("Detail")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ExpirationDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Id")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
@@ -311,6 +308,9 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.Property<int>("Price")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("PublicDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int?>("confirmTimeshare")
                         .HasColumnType("int");
