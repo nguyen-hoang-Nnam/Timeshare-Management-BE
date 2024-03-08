@@ -162,10 +162,10 @@ namespace TimeshareManagement.API.Controllers
 
                 if (booking == null || !booking.Any())
                 {
-                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No timeshares found with the specified statusId." });
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No booking request found with the specified statusId." });
                 }
 
-                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Timeshares retrieved successfully." });
+                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking request retrieved successfully." });
             }
             catch (Exception ex)
             {
@@ -230,6 +230,28 @@ namespace TimeshareManagement.API.Controllers
                 await _bookingRequestRepository.Update(booking);
 
                 return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking declined successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
+        [HttpGet]
+        [Route("GetBookingByTimeshare/{timeshareId}")]
+        /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
+        public async Task<IActionResult> GetBookingByTimeshare(int timeshareId)
+        {
+            try
+            {
+                // Retrieve timeshares with the specified statusId
+                var booking = await _bookingRequestRepository.GetByTimeshareIdAndStatusId(timeshareId, 4);
+
+                if (booking == null || !booking.Any())
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No booking request found with the specified timeshareId." });
+                }
+
+                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking request retrieved successfully." });
             }
             catch (Exception ex)
             {
