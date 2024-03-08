@@ -181,6 +181,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "GetBookingByTimeshare",
+    "RelativePath": "api/BookingRequest/GetBookingByTimeshare/{timeshareId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshareId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
     "Method": "GetByUserId",
     "RelativePath": "api/BookingRequest/GetBookingByUserId/{userId}",
     "HttpMethod": "GET",
