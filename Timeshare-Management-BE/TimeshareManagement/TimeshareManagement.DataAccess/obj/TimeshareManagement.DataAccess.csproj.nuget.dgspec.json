@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[12.0.1, )"
             },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.11, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[7.0.10, )"
@@ -165,6 +169,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.11, )"
             },
             "MailKit": {
               "target": "Package",
@@ -279,6 +287,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.11, )"
             },
             "MailKit": {
               "target": "Package",

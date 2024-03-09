@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
 using TimeshareManagement.DataAccess.Data;
@@ -70,7 +71,7 @@ namespace TimeshareManagement.API.Controllers
         {
             try
             {
-                var existinguser = await _userRepository.GetUserById(id);
+                var existingUser = await _userRepository.GetUserById(id);
 
                 if (user == null)
                 {
@@ -78,14 +79,20 @@ namespace TimeshareManagement.API.Controllers
                 } else
                 {
                     // Update user properties
-                    existinguser.Email = user.Email;
-                    existinguser.PhoneNumber = user.PhoneNumber;
-                    existinguser.Name = user.Name;
-                    existinguser.NormalizedEmail = user.Email.ToUpper();
+                    existingUser.Email = user.Email;
+                    existingUser.PhoneNumber = user.PhoneNumber;
+                    existingUser.Name = user.Name;
+                    existingUser.NormalizedEmail = user.Email.ToUpper();
+
+                    if (!string.IsNullOrEmpty(user.Password))
+                    {
+                        var passwordHasher = new PasswordHasher<ApplicationUser>();
+                        existingUser.PasswordHash = passwordHasher.HashPassword(existingUser, user.Password);
+                    }
 
 
                     // Save changes using the generic repository
-                    await _userRepository.Update(existinguser);
+                    await _userRepository.Update(existingUser);
                 }
 
                 return Ok(new ResponseDTO { Result = user, IsSucceed = true, Message = "Update User successfully" });
@@ -101,8 +108,22 @@ namespace TimeshareManagement.API.Controllers
         {
             try
             {
-                await _userRepository.DeleteById(id);
-                return Ok(new ResponseDTO { Result = null, IsSucceed = true, Message = "Delete User successfully" });
+                // Retrieve the user by ID
+                var userToDelete = await _userRepository.GetById(id);
+
+                if (userToDelete == null)
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "User not found" });
+                }
+
+                // Soft delete by setting isActive to false
+                userToDelete.isActive = false;
+
+                // Update the user in the repository
+                await _userRepository.Update(userToDelete);
+                /*BackgroundJob.Schedule(() => PermanentlyDeleteUser(id), TimeSpan.FromDays(30));*/
+
+                return Ok(new ResponseDTO { Result = userToDelete, IsSucceed = true, Message = "User deactivated successfully" });
             }
             catch (Exception ex)
             {

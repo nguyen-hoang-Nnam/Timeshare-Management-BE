@@ -12,5 +12,6 @@ namespace TimeshareManagement.Models.Models
         public string Name { get; set; }
         /*public string LastName { get; set; }*/
         /*public ICollection<Timeshare>? timeshares { get; set; }*/
+        public bool isActive { get; set; }
     }
 }

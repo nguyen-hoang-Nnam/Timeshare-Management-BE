@@ -192,6 +192,7 @@ namespace TimeshareManagement.DataAccess.Repository
                 UserName = registerDTO.Username,
                 SecurityStamp = Guid.NewGuid().ToString(),
                 PhoneNumber = registerDTO.PhoneNumber,
+                isActive = true,
             };
 
             var createUserResult = await _userManager.CreateAsync(newUser, registerDTO.Password);

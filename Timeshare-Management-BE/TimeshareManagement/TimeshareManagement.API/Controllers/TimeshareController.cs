@@ -82,7 +82,7 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
                 }
-                timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 4};
+                timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1};
                 if (timeshare.User != null && timeshare.User.Id != null)
                 {
                     timeshare.User = await _userRepository.GetByIdAsync(timeshare.User.Id);
@@ -198,7 +198,7 @@ namespace TimeshareManagement.API.Controllers
                     return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found" });
                 }
                     // Update timeshare status ID directly
-                    timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 5 };
+                    timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 2 };
                     if (timeshare.TimeshareStatus != null && timeshare.TimeshareStatus.timeshareStatusId != null)
                     {
                         timeshare.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(timeshare.TimeshareStatus.timeshareStatusId);
@@ -275,7 +275,7 @@ namespace TimeshareManagement.API.Controllers
                     return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found" });
                 }
                 // Update timeshare status ID directly
-                timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 6 };
+                timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 3 };
                 if (timeshare.TimeshareStatus != null && timeshare.TimeshareStatus.timeshareStatusId != null)
                 {
                     timeshare.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(timeshare.TimeshareStatus.timeshareStatusId);
@@ -307,8 +307,8 @@ namespace TimeshareManagement.API.Controllers
                 // Filter timeshares based on the expiration date
                 /*var activeTimeshares = allTimeshares.Where(t => t.PublicDate > DateTime.Now).ToList();*/
                 var activeTimeshares = allTimeshares
-                .Where(t => t.PublicDate <= DateTime.Now && t.PublicDate.AddMinutes(2) >= DateTime.Now &&
-                        t.timeshareStatusId == 5)
+                .Where(t => t.PublicDate <= DateTime.Now && t.PublicDate.AddDays(7) >= DateTime.Now &&
+                        t.timeshareStatusId == 2)
                 .ToList();
 
                 return Ok(new ResponseDTO { Result = activeTimeshares, IsSucceed = true, Message = "Active Timeshares retrieved successfully." });

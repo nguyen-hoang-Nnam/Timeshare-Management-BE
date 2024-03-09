@@ -98,7 +98,8 @@ builder.Services.AddCors(options =>
                    .AllowAnyMethod();
         });
 });
-
+//
+/*builder.Services.AddHangfire(config => config.UseMemoryStorage());*/
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -140,6 +141,8 @@ app.UseSwaggerUI(c =>
 });
 app.UseCors("AllowSpecificOrigin");
 app.UseHttpsRedirection();
+/*app.UseHangfireDashboard();
+app.UseHangfireServer();*/
 
 app.UseAuthentication();
 app.UseAuthorization();
