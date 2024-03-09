@@ -76,7 +76,7 @@ namespace TimeshareManagement.API.Controllers
             {
                 return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
             }
-            bookingRequest.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 4 };
+            bookingRequest.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1 };
             if (bookingRequest.User != null && bookingRequest.User.Id != null)
             {
                 bookingRequest.User = await _userRepository.GetByIdAsync(bookingRequest.User.Id);
@@ -184,7 +184,7 @@ namespace TimeshareManagement.API.Controllers
                     return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found" });
                 }
                 // Update timeshare status ID directly
-                booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 5 };
+                booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 2 };
                 if (booking.TimeshareStatus != null && booking.TimeshareStatus.timeshareStatusId != null)
                 {
                     booking.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(booking.TimeshareStatus.timeshareStatusId);
@@ -216,7 +216,7 @@ namespace TimeshareManagement.API.Controllers
                     return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found" });
                 }
                 // Update timeshare status ID directly
-                booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 6 };
+                booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 3 };
                 if (booking.TimeshareStatus != null && booking.TimeshareStatus.timeshareStatusId != null)
                 {
                     booking.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(booking.TimeshareStatus.timeshareStatusId);
@@ -244,7 +244,7 @@ namespace TimeshareManagement.API.Controllers
             try
             {
                 // Retrieve timeshares with the specified statusId
-                var booking = await _bookingRequestRepository.GetByTimeshareIdAndStatusId(timeshareId, 4);
+                var booking = await _bookingRequestRepository.GetByTimeshareIdAndStatusId(timeshareId, 1);
 
                 if (booking == null || !booking.Any())
                 {
