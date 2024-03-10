@@ -797,6 +797,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.UserController",
+    "Method": "CreateUser",
+    "RelativePath": "api/User/CreateUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createUser",
+        "Type": "TimeshareManagement.Models.Models.DTO.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.UserController",
     "Method": "DeleteUser",
     "RelativePath": "api/User/DeleteUser/{id}",
     "HttpMethod": "DELETE",
