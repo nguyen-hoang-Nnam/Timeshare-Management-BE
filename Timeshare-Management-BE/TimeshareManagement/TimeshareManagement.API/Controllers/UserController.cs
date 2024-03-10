@@ -19,13 +19,15 @@ namespace TimeshareManagement.API.Controllers
         private readonly ApplicationDbContext _db;
         private readonly IMapper _mapper;
         private readonly IRepository<ApplicationUser> _userRepository;
+        private readonly UserManager<ApplicationUser> _userManager;
 
-        public UserController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IRepository<ApplicationUser> userRepository)
+        public UserController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IRepository<ApplicationUser> userRepository, UserManager<ApplicationUser> userManager)
         {
             _configuration = configuration;
             _db = db;
             _mapper = mapper;
             _userRepository = userRepository;
+            _userManager = userManager;
         }
 
         [HttpGet]
@@ -152,6 +154,29 @@ namespace TimeshareManagement.API.Controllers
             {
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
+        }
+        [HttpPost]
+        [Route("CreateUser")]
+        public async Task<IActionResult> CreateUser([FromBody] UserDTO createUser)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            var user = new ApplicationUser
+            {
+                UserName = createUser.UserName,
+                Email = createUser.Email,
+                Name = createUser.Name,
+                PhoneNumber = createUser.PhoneNumber,
+                isActive = true,
+            };
+            var result = await _userManager.CreateAsync(user, createUser.Password);
+            if (result.Succeeded)
+            {
+                return Ok(new ResponseDTO { Result = user, IsSucceed = true, Message = "Create User successfully" });
+            }
+            return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {result.Errors}" });
         }
     }
 }
