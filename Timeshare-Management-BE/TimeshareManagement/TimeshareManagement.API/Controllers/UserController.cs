@@ -8,6 +8,7 @@ using TimeshareManagement.DataAccess.Repository;
 using TimeshareManagement.DataAccess.Repository.IRepository;
 using TimeshareManagement.Models.Models;
 using TimeshareManagement.Models.Models.DTO;
+using TimeshareManagement.Models.Role;
 
 namespace TimeshareManagement.API.Controllers
 {
@@ -163,7 +164,7 @@ namespace TimeshareManagement.API.Controllers
             {
                 return BadRequest();
             }
-            var user = new ApplicationUser
+            ApplicationUser user = new ApplicationUser
             {
                 UserName = createUser.UserName,
                 Email = createUser.Email,
@@ -174,6 +175,8 @@ namespace TimeshareManagement.API.Controllers
             var result = await _userManager.CreateAsync(user, createUser.Password);
             if (result.Succeeded)
             {
+                await _userManager.AddToRoleAsync(user, StaticUserRoles.STAFF);
+
                 return Ok(new ResponseDTO { Result = user, IsSucceed = true, Message = "Create User successfully" });
             }
             return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {result.Errors}" });
