@@ -304,8 +304,6 @@ namespace TimeshareManagement.API.Controllers
                 // Retrieve timeshares from the repository
                 var allTimeshares = await _timeshareRepository.GetAllAsync();
 
-                // Filter timeshares based on the expiration date
-                /*var activeTimeshares = allTimeshares.Where(t => t.PublicDate > DateTime.Now).ToList();*/
                 var activeTimeshares = allTimeshares
                 .Where(t => t.PublicDate <= DateTime.Now && t.PublicDate.AddDays(7) >= DateTime.Now &&
                         t.timeshareStatusId == 2)
