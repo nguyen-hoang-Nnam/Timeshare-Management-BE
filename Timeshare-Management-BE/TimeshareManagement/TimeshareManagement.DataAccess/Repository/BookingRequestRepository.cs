@@ -104,5 +104,9 @@ namespace TimeshareManagement.DataAccess.Repository
                 })
                     .ToListAsync();
         }
+        public async Task<int> GetBookingCountByTimeshareId(int timeshareId)
+        {
+            return await _db.BookingRequests.CountAsync(b => b.timeshareId == timeshareId);
+        }
     }
 }

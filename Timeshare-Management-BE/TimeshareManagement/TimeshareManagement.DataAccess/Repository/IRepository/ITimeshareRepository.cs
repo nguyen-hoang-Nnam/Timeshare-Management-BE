@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TimeshareManagement.Models.Models;
+using TimeshareManagement.Models.Models.DTO;
 
 namespace TimeshareManagement.DataAccess.Repository.IRepository
 {

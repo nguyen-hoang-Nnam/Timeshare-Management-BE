@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
 using System.IO;
 using System.Linq.Expressions;
@@ -164,7 +165,7 @@ namespace TimeshareManagement.API.Controllers
             }
         }
         [HttpGet]
-        public async Task<IActionResult> GetTimeshare(int page, int pageSize, decimal? searchPrice)
+        public async Task<IActionResult> GetTimeshare(int page, int pageSize = 5, decimal? searchPrice = null)
         {
             try
             {
@@ -315,6 +316,26 @@ namespace TimeshareManagement.API.Controllers
             {
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
+        }
+        [HttpGet]
+        [Route("GetBookingCount")]
+        public async Task<ActionResult<IEnumerable<Timeshare>>> GetTimeshares()
+        {
+            // Retrieve all timeshares
+            var timeshares = await _db.Timeshares.ToListAsync();
+
+            // Calculate the count of booking requests for each timeshare
+            var timeshareWithBookingCount = timeshares.Select(timeshare =>
+            {
+                var bookingCount = _db.BookingRequests.Count(b => b.timeshareId == timeshare.timeshareId);
+                return new
+                {
+                    Timeshare = timeshare,
+                    BookingCount = bookingCount
+                };
+            }).ToList();
+
+            return Ok(timeshareWithBookingCount);
         }
     }
 }
