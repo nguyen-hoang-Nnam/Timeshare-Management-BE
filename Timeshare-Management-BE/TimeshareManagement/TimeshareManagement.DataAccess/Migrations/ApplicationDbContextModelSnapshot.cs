@@ -252,7 +252,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasIndex("timeshareStatusId");
 
-                    b.ToTable("BookingRequests");
+                    b.ToTable("BookingRequests", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.Place", b =>
@@ -268,7 +268,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("placeId");
 
-                    b.ToTable("Places");
+                    b.ToTable("Places", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.RoomAmenities", b =>
@@ -285,7 +285,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("roomAmenitiesId");
 
-                    b.ToTable("RoomAmenities");
+                    b.ToTable("RoomAmenities", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.Timeshare", b =>
@@ -335,7 +335,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasIndex("timeshareStatusId");
 
-                    b.ToTable("Timeshares");
+                    b.ToTable("Timeshares", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.TimeshareDetail", b =>
@@ -354,7 +354,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("timeshareDetailId");
 
-                    b.ToTable("TimesharesDetail");
+                    b.ToTable("TimesharesDetail", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.TimeshareStatus", b =>
@@ -370,7 +370,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("timeshareStatusId");
 
-                    b.ToTable("TimesharesStatus");
+                    b.ToTable("TimesharesStatus", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
