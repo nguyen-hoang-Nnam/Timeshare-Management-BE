@@ -82,11 +82,12 @@ namespace TimeshareManagement.API.Controllers
                 } else
                 {
                     // Update user properties
+                    existingUser.UserName = user.UserName;
                     existingUser.Email = user.Email;
                     existingUser.PhoneNumber = user.PhoneNumber;
                     existingUser.Name = user.Name;
                     existingUser.NormalizedEmail = user.Email.ToUpper();
-
+                    existingUser.isActive = user.isActive;
                     if (!string.IsNullOrEmpty(user.Password))
                     {
                         var passwordHasher = new PasswordHasher<ApplicationUser>();
