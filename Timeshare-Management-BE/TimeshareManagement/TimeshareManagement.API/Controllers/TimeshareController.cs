@@ -137,8 +137,9 @@ namespace TimeshareManagement.API.Controllers
                     existingTimeshare.Image = timeshare.Image;
                     existingTimeshare.Detail = timeshare.Detail;
                     existingTimeshare.placeId = timeshare.placeId;
-                    /*existingTimeshare.Id = timeshare.Id;*/
+                    existingTimeshare.Id = timeshare.Id;
                     existingTimeshare.timeshareStatusId = timeshare.timeshareStatusId;
+                    existingTimeshare.PublicDate = timeshare.PublicDate;
                     //
                     await _timeshareRepository.Update(existingTimeshare);
                 }
@@ -306,7 +307,7 @@ namespace TimeshareManagement.API.Controllers
                 var allTimeshares = await _timeshareRepository.GetAllAsync();
 
                 var activeTimeshares = allTimeshares
-                .Where(t => t.PublicDate <= DateTime.Now && t.PublicDate.AddDays(7) >= DateTime.Now &&
+                .Where(t => t.PublicDate <= DateTime.Now && t.PublicDate.AddDays(30) >= DateTime.Now &&
                         t.timeshareStatusId == 2)
                 .ToList();
 
