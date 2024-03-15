@@ -185,6 +185,17 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found" });
                 }
+                Timeshare timeshare = booking.Timeshare;
+                if (timeshare == null)
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for this booking." });
+                }
+
+                // Update timeshare name
+                timeshare.timeshareStatusId = 4;
+
+                // Save changes to the database
+                await _timeshareRepository.Update(timeshare);
                 // Update timeshare status ID directly
                 booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 2 };
                 if (booking.TimeshareStatus != null && booking.TimeshareStatus.timeshareStatusId != null)
@@ -195,9 +206,9 @@ namespace TimeshareManagement.API.Controllers
                         return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
                     }
                 }
-
                 // Save changes to the database
                 await _bookingRequestRepository.Update(booking);
+                
 
                 return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking confirmed successfully" });
             }
@@ -207,7 +218,7 @@ namespace TimeshareManagement.API.Controllers
             }
         }
         [HttpPost]
-        [Route("DeclineTimeshare/{bookingId}")]
+        [Route("DeclineBooking/{bookingId}")]
         public async Task<IActionResult> DeclineBooking(int bookingId)
         {
             try
