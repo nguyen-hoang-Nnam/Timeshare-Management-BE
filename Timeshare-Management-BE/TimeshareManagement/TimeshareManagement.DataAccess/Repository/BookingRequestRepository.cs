@@ -91,6 +91,7 @@ namespace TimeshareManagement.DataAccess.Repository
                     {
                         
                         b.Timeshare.timeshareId,
+                        b.Timeshare.timeshareStatusId,
                     },
                     UserInfo = new
                     {
@@ -126,6 +127,7 @@ namespace TimeshareManagement.DataAccess.Repository
                         b.Timeshare.timeshareId,
                         b.Timeshare.timeshareName,
                         b.Timeshare.Price,
+                        b.Timeshare.timeshareStatusId,
                     },
                     UserInfo = new
                     {
@@ -137,6 +139,12 @@ namespace TimeshareManagement.DataAccess.Repository
                     b.timeshareStatusId
                 })
                     .ToListAsync();
+        }
+        public async Task<BookingRequest> GetById(int id)
+        {
+            return await _db.BookingRequests
+                .Include(b => b.Timeshare)
+                .FirstOrDefaultAsync(b => b.bookingRequestId == id);
         }
     }
 }

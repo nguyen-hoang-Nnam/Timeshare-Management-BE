@@ -124,7 +124,7 @@
   {
     "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
     "Method": "DeclineBooking",
-    "RelativePath": "api/BookingRequest/DeclineTimeshare/{bookingId}",
+    "RelativePath": "api/BookingRequest/DeclineBooking/{bookingId}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
