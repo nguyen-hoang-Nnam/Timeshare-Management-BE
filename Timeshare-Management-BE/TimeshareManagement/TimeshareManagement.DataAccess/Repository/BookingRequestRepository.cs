@@ -108,5 +108,35 @@ namespace TimeshareManagement.DataAccess.Repository
         {
             return await _db.BookingRequests.CountAsync(b => b.timeshareId == timeshareId);
         }
+        public async Task<IEnumerable<object>> GetBookingSuccess(int timeshareId, int statusId)
+        {
+            return await _db.BookingRequests
+                .Include(b => b.Timeshare)
+                .Include(b => b.TimeshareStatus)
+                .Include(b => b.User)
+                .Where(b => b.timeshareId == timeshareId && b.timeshareStatusId == statusId
+                            && b.Timeshare != null && b.TimeshareStatus != null && b.User != null)
+                .Select(b => new
+                {
+                    b.bookingRequestId,
+                    b.bookingDate,
+                    TimeshareInfo = new
+                    {
+
+                        b.Timeshare.timeshareId,
+                        b.Timeshare.timeshareName,
+                        b.Timeshare.Price,
+                    },
+                    UserInfo = new
+                    {
+                        b.User.Id,
+                        b.User.Name,
+                        b.User.Email,
+                        b.User.PhoneNumber
+                    },
+                    b.timeshareStatusId
+                })
+                    .ToListAsync();
+        }
     }
 }

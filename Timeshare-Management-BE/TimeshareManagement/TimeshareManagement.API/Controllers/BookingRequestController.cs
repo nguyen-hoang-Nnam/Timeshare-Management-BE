@@ -8,6 +8,7 @@ using TimeshareManagement.DataAccess.Repository;
 using TimeshareManagement.DataAccess.Repository.IRepository;
 using TimeshareManagement.Models.Models;
 using TimeshareManagement.Models.Models.DTO;
+using System.Linq;
 
 namespace TimeshareManagement.API.Controllers
 {
@@ -60,7 +61,7 @@ namespace TimeshareManagement.API.Controllers
                     return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Place not found." });
                 }
                 else
-                { 
+                {
                     return Ok(new ResponseDTO { Result = request, IsSucceed = true, Message = "Place retrieved successfully." });
                 }
             }
@@ -246,6 +247,28 @@ namespace TimeshareManagement.API.Controllers
             {
                 // Retrieve timeshares with the specified statusId
                 var booking = await _bookingRequestRepository.GetByTimeshareIdAndStatusId(timeshareId, 1);
+
+                if (booking == null || !booking.Any())
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No booking request found with the specified timeshareId." });
+                }
+
+                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking request retrieved successfully." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
+        [HttpGet]
+        [Route("GetBookingSuccess/{timeshareId}")]
+        /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
+        public async Task<IActionResult> GetBookingSuccess(int timeshareId)
+        {
+            try
+            {
+                // Retrieve timeshares with the specified statusId
+                var booking = await _bookingRequestRepository.GetBookingSuccess(timeshareId, 2);
 
                 if (booking == null || !booking.Any())
                 {

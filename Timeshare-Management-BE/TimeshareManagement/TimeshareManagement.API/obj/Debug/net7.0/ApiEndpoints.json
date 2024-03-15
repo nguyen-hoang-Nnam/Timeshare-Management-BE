@@ -213,6 +213,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "GetBookingSuccess",
+    "RelativePath": "api/BookingRequest/GetBookingSuccess/{timeshareId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "timeshareId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
     "Method": "GetById",
     "RelativePath": "api/BookingRequest/GetRequestById/{id}",
     "HttpMethod": "GET",

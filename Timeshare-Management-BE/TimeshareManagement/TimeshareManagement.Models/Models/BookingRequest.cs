@@ -27,6 +27,16 @@ namespace TimeshareManagement.Models.Models
         [ForeignKey("timeshareStatusId")]
         [JsonIgnore]
         public TimeshareStatus? TimeshareStatus { get; set; }
-
     }
+    /*public class Payment {
+        [Key]
+        public int paymentId { get; set; }
+        public DateTime? paymentDate { get; set; }
+        public int Amount { get; set; }
+        public int? bookingRequestId { get; set; }
+        [ForeignKey("{ get; set; }")]
+        [JsonIgnore]
+        public BookingRequest? BookingRequest { get; set; }
+        }
+        */
 }
