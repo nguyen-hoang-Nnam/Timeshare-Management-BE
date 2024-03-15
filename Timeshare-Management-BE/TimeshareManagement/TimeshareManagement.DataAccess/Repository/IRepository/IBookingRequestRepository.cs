@@ -15,5 +15,6 @@ namespace TimeshareManagement.DataAccess.Repository.IRepository
         Task<BookingRequest> GetByIdAsync(int id);
         Task<IEnumerable<BookingRequest>> GetByStatusId(int statusId);
         Task<IEnumerable<object>> GetByTimeshareIdAndStatusId(int timeshareId, int statusId);
+        Task<IEnumerable<object>> GetBookingSuccess(int timeshareId, int statusId);
     }
 }
