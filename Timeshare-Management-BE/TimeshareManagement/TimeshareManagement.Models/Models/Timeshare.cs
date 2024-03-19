@@ -28,7 +28,6 @@ namespace TimeshareManagement.Models.Models
         [ForeignKey("placeId")]
         [JsonIgnore]
         public Place? Place { get; set; }
-        public int? confirmTimeshare {  get; set; }
         public string? Id { get; set; }
         [ForeignKey("Id")]
         [JsonIgnore]

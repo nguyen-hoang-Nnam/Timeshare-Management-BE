@@ -140,7 +140,7 @@ namespace TimeshareManagement.API.Controllers
 
                 if (booking == null || !booking.Any())
                 {
-                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "No timeshares found for the user." });
+                    return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "No timeshares found for the user." });
                 }
                 else
                 {
