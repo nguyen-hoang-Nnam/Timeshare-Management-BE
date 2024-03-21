@@ -91,6 +91,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "CancelBooking",
+    "RelativePath": "api/BookingRequest/CancelBooking/{bookingId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
     "Method": "ConfirmBooking",
     "RelativePath": "api/BookingRequest/ConfirmBooking/{bookingId}",
     "HttpMethod": "POST",
@@ -502,6 +518,11 @@
         "Name": "timeshare",
         "Type": "TimeshareManagement.Models.Models.Timeshare",
         "IsRequired": true
+      },
+      {
+        "Name": "image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
