@@ -77,7 +77,7 @@ namespace TimeshareManagement.API.Controllers
         [HttpPost]
         [Route("CreateTimeshare")]
         /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
-        public async Task<IActionResult> CreateTimeshare([FromBody] Timeshare timeshare, IFormFile image)
+        public async Task<IActionResult> CreateTimeshare([FromBody] Timeshare timeshare)
         {
             try
             {
