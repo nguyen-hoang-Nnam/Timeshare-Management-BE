@@ -26,8 +26,9 @@ namespace TimeshareManagement.API.Controllers
         private readonly IUserRepository _userRepository;
         private readonly IPlaceRepository _placeRepository;
         private readonly ITimeshareStatusRepository _timeshareStatusRepository;
+        private readonly IWebHostEnvironment _environment;
 
-        public TimeshareController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, ITimeshareRepository timeshareRepository, IUserRepository userRepository, IPlaceRepository placeRepository, ITimeshareStatusRepository timeshareStatusRepository)
+        public TimeshareController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, ITimeshareRepository timeshareRepository, IUserRepository userRepository, IPlaceRepository placeRepository, ITimeshareStatusRepository timeshareStatusRepository, IWebHostEnvironment environment)
         {
             _configuration = configuration;
             _db = db;
@@ -36,6 +37,7 @@ namespace TimeshareManagement.API.Controllers
             _userRepository = userRepository;
             _placeRepository = placeRepository;
             _timeshareStatusRepository = timeshareStatusRepository;
+            _environment = environment;
         }
         [HttpGet]
         [Route("GetAllTimeshare")]
@@ -75,7 +77,7 @@ namespace TimeshareManagement.API.Controllers
         [HttpPost]
         [Route("CreateTimeshare")]
         /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
-        public async Task<IActionResult> CreateTimeshare([FromBody] Timeshare timeshare)
+        public async Task<IActionResult> CreateTimeshare([FromBody] Timeshare timeshare, IFormFile image)
         {
             try
             {
@@ -83,6 +85,7 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
                 }
+                
                 timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1};
                 if (timeshare.User != null && timeshare.User.Id != null)
                 {

@@ -293,5 +293,48 @@ namespace TimeshareManagement.API.Controllers
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
         }
+        [HttpPost]
+        [Route("CancelBooking/{bookingId}")]
+        public async Task<IActionResult> CancelBooking(int bookingId)
+        {
+            try
+            {
+                BookingRequest booking = await _bookingRequestRepository.GetById(bookingId);
+                if (booking == null)
+                {
+                    return NotFound(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found" });
+                }
+                Timeshare timeshare = booking.Timeshare;
+                if (timeshare == null)
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for this booking." });
+                }
+
+                // Update timeshare name
+                timeshare.timeshareStatusId = 2;
+
+                // Save changes to the database
+                await _timeshareRepository.Update(timeshare);
+                // Update timeshare status ID directly
+                booking.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 5 };
+                if (booking.TimeshareStatus != null && booking.TimeshareStatus.timeshareStatusId != null)
+                {
+                    booking.TimeshareStatus = await _timeshareStatusRepository.GetByIdAsync(booking.TimeshareStatus.timeshareStatusId);
+                    if (booking.TimeshareStatus == null)
+                    {
+                        return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
+                    }
+                }
+                // Save changes to the database
+                await _bookingRequestRepository.Update(booking);
+
+
+                return Ok(new ResponseDTO { Result = booking, IsSucceed = true, Message = "Booking cancel successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
     }
 }
