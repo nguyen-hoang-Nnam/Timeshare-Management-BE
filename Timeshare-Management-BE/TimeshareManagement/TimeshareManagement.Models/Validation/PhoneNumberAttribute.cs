@@ -16,8 +16,8 @@ namespace TimeshareManagement.Models.Validation
 
             string phoneNumber = value.ToString();
 
-            // Check if the phone number starts with "+84"
-            if (phoneNumber.StartsWith("+84"))
+            // Check if the phone number starts with "0"
+            if (phoneNumber.StartsWith("0"))
                 return true;
 
             return false;
@@ -25,7 +25,7 @@ namespace TimeshareManagement.Models.Validation
 
         public override string FormatErrorMessage(string name)
         {
-            return "Phone number must begin with '+84'";
+            return "Phone number must begin with '0'";
         }
     }
 }
