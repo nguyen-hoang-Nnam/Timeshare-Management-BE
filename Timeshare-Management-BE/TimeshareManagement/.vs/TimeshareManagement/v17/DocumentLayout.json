@@ -3,28 +3,72 @@
   "WorkspaceRootPath": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\bookingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\bookingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\validation\\phonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\validation\\phonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\timesharecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\timesharecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\timesharedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\timesharedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\timeshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\timeshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\validation\\phonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\validation\\phonenumberattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\timesharecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\timesharecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\placedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\placedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\bookingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\bookingrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\timesharestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\timesharestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\place.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\timesharestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\timesharestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\timeshareimage\\timeshareimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\timeshareimage\\timeshareimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\authrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,10 +87,6 @@
       "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -55,20 +95,12 @@
       "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\migrations\\20240318075602_update-timeshare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\timesharedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\timesharedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\irepository\\ibookingrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\irepository\\ibookingrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\bookingrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\bookingrequestrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\irepository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\bookingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -91,10 +123,6 @@
       "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\irepository\\itimesharestatusrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\timesharestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\timesharestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\timesharedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\timesharedetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -103,20 +131,8 @@
       "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\placedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\placedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.api\\controllers\\roomamenitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5D26FCA-A214-4D5B-ACC6-A42698EDF865}|TimeshareManagement.API\\TimeshareManagement.API.csproj|solutionrelative:timesharemanagement.api\\controllers\\roomamenitiescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\timesharedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -153,14 +169,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\migrations\\20240307063741_update-day.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|solutionrelative:timesharemanagement.dataaccess\\migrations\\20240307063741_update-day.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\bookingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.models\\models\\dto\\timesharestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{750D17E3-5E5F-4FA2-8158-9FEBC3C33279}|TimeshareManagement.Models\\TimeshareManagement.Models.csproj|solutionrelative:timesharemanagement.models\\models\\dto\\timesharestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{76B6B16F-D95E-4832-BCD3-AA9D44D5A343}|TimeshareManagement.DataAccess\\TimeshareManagement.DataAccess.csproj|d:\\timeshare-management-be\\timeshare-management-be\\timesharemanagement\\timesharemanagement.dataaccess\\repository\\irepository\\iauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -218,7 +226,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 75,
+          "SelectedChildIndex": 78,
           "Children": [
             {
               "$type": "Bookmark",
@@ -506,502 +514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PhoneNumberAttribute.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T15:58:04.291Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RegisterDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAqwCAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T05:01:31.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
-              "ViewState": "AQIAALIAAAAAAAAAAAAqwNAAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:44:31.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Program.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Program.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Program.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Program.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAYwC0AAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T04:03:09.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookingRequestController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
-              "ViewState": "AQIAAB4BAAAAAAAAAAAuwDoBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-02T03:58:05.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAApwFkAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T04:18:15.621Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Timeshare.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Timeshare.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\Timeshare.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Timeshare.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\Timeshare.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:23:08.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TimeshareController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\TimeshareController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAQwHoAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:24:43.882Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T09:15:10.466Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TimeshareDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAiwBMAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:23:49.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StaticUserRoles.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T15:54:42.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\ApplicationUser.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\ApplicationUser.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T04:17:14.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T13:02:47.196Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IPlaceRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T09:39:51.771Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "20240318075602_update-timeshare.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T07:56:02.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\appsettings.json",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\appsettings.json",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\appsettings.json",
-              "RelativeToolTip": "TimeshareManagement.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-18T12:25:49.279Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "IBookingRequestRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T09:39:47.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BookingRequestRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
-              "ViewState": "AQIAAHYAAAAAAAAAAAAIwJIAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T13:28:27.765Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BookingRequest.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\BookingRequest.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\BookingRequest.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\BookingRequest.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\BookingRequest.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAnwAwAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T04:17:15.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "TimeshareRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAiwEwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:29:27.488Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ITimeshareStatusRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T16:32:13.313Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ITimeshareRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T13:15:50.127Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TimeshareStatus.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-04T02:09:02.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "TimeshareDetailDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:24:09.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "LoginDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T14:39:20.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-12T08:34:50.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "PlaceDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T03:59:38.236Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "RoomAmenitiesController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T04:22:09.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "TimeshareDetail.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:23:35.146Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\Repository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\Repository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\Repository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAuwDIAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T03:46:19.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "TimeshareWithBookingCountDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-10T04:28:17.86Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T10:40:54.317Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:44:27.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAIAzwDYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:31:14.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAYwBYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T10:40:56.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "20240308130500_User-Table.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T13:05:00.896Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "TimeshareStatusController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAASwG4AAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-03T12:36:42.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "PlaceController.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\PlaceController.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\PlaceController.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\PlaceController.cs",
-              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\PlaceController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T04:24:05.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "20240307063741_update-day.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-07T06:37:41.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "20240306125518_expirationDate.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
-              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-06T12:55:18.776Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "BookingRequestDTO.cs",
-              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
-              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
-              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
-              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T04:17:13.552Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
               "Title": "TimeshareStatusDTO.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareStatusDTO.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareStatusDTO.cs",
@@ -1013,7 +526,525 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 1,
+              "Title": "TimeshareDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:23:49.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\Repository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\Repository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\Repository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAlwCAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T03:46:19.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlaceDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\PlaceDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T03:59:38.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingRequestDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\BookingRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T04:17:13.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Timeshare.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\Timeshare.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwB8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:23:08.414Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookingRequestController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\BookingRequestController.cs",
+              "ViewState": "AQIAABkBAAAAAAAAAAAAAGEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T03:58:05.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PhoneNumberAttribute.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Validation\\PhoneNumberAttribute.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T15:58:04.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Program.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Program.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Program.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Program.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAmwJgAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T04:03:09.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimeshareController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\TimeshareController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAAAJgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:24:43.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\LoginDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T14:39:20.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegisterDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\RegisterDTO.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA6wCAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T05:01:31.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAWwA8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T09:15:10.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T04:17:14.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TimeshareStatus.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\TimeshareStatus.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-04T02:09:02.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Place.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Place.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\Place.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\Place.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\Place.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T02:50:54.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAApwFkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T04:18:15.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\AuthRepository.cs",
+              "ViewState": "AQIAALIAAAAAAAAAAAAqwNAAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:44:31.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TimeshareImage.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareImage\\TimeshareImage.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\TimeshareImage\\TimeshareImage.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\TimeshareImage\\TimeshareImage.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\TimeshareImage\\TimeshareImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T12:24:59.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StaticUserRoles.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Role\\StaticUserRoles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T15:54:42.292Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T13:02:47.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IPlaceRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IPlaceRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T09:39:51.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20240318075602_update-timeshare.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240318075602_update-timeshare.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T07:56:02.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\appsettings.json",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\appsettings.json",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\appsettings.json",
+              "RelativeToolTip": "TimeshareManagement.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-18T12:25:49.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IBookingRequestRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IBookingRequestRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T09:39:47.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BookingRequestRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\BookingRequestRepository.cs",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAIwJIAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T13:28:27.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BookingRequest.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\BookingRequest.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\BookingRequest.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\BookingRequest.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\BookingRequest.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAnwAwAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T04:17:15.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TimeshareRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\TimeshareRepository.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAiwEwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:29:27.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ITimeshareStatusRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareStatusRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T16:32:13.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ITimeshareRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\ITimeshareRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T13:15:50.127Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TimeshareDetailDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareDetailDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:24:09.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T08:34:50.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "RoomAmenitiesController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\RoomAmenitiesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T04:22:09.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TimeshareDetail.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\TimeshareDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:23:35.146Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "TimeshareWithBookingCountDTO.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
+              "RelativeToolTip": "TimeshareManagement.Models\\Models\\DTO\\TimeshareWithBookingCountDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T04:28:17.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T10:40:54.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:44:27.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAIAzwDYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:31:14.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAYwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T10:40:56.607Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20240308130500_User-Table.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240308130500_User-Table.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T13:05:00.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TimeshareStatusController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\TimeshareStatusController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAASwG4AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:36:42.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PlaceController.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\PlaceController.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\PlaceController.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\PlaceController.cs",
+              "RelativeToolTip": "TimeshareManagement.API\\Controllers\\PlaceController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T04:24:05.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20240307063741_update-day.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240307063741_update-day.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-07T06:37:41.298Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20240306125518_expirationDate.cs",
+              "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
+              "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
+              "ToolTip": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
+              "RelativeToolTip": "TimeshareManagement.DataAccess\\Migrations\\20240306125518_expirationDate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T12:55:18.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
               "Title": "20240306085500_update-table-booking.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240306085500_update-table-booking.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240306085500_update-table-booking.cs",
@@ -1025,7 +1056,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\ApplicationDbContextModelSnapshot.cs",
@@ -1037,7 +1068,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "IAuthRepository.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\IRepository\\IAuthRepository.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\IRepository\\IAuthRepository.cs",
@@ -1049,7 +1080,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "TimeshareStatusRepository.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareStatusRepository.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\TimeshareStatusRepository.cs",
@@ -1061,7 +1092,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "PlaceRepository.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\PlaceRepository.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\PlaceRepository.cs",
@@ -1073,7 +1104,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "TimeshareDetailRepository.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Repository\\TimeshareDetailRepository.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Repository\\TimeshareDetailRepository.cs",
@@ -1085,7 +1116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "MappingConfig.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Utility\\MappingConfig.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.Utility\\MappingConfig.cs",
@@ -1097,7 +1128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "TimeshareDetailController.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.API\\Controllers\\TimeshareDetailController.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.API\\Controllers\\TimeshareDetailController.cs",
@@ -1109,7 +1140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "20240305042235_update-data.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.DataAccess\\Migrations\\20240305042235_update-data.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.DataAccess\\Migrations\\20240305042235_update-data.cs",
@@ -1121,7 +1152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "RoomAmenities.cs",
               "DocumentMoniker": "D:\\Timeshare-Management-BE\\Timeshare-Management-BE\\TimeshareManagement\\TimeshareManagement.Models\\Models\\RoomAmenities.cs",
               "RelativeDocumentMoniker": "TimeshareManagement.Models\\Models\\RoomAmenities.cs",

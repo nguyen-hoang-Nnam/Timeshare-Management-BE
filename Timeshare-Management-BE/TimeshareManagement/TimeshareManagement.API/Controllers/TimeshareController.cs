@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using System.Data;
 using System.IO;
 using System.Linq.Expressions;
@@ -12,6 +13,7 @@ using TimeshareManagement.DataAccess.Repository.IRepository;
 using TimeshareManagement.Models.Models;
 using TimeshareManagement.Models.Models.DTO;
 using TimeshareManagement.Models.Role;
+using TimeshareManagement.Models.TimeshareImage;
 
 namespace TimeshareManagement.API.Controllers
 {
@@ -85,8 +87,8 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object is null." });
                 }
-                
-                timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1};
+
+                timeshare.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1 };
                 if (timeshare.User != null && timeshare.User.Id != null)
                 {
                     timeshare.User = await _userRepository.GetByIdAsync(timeshare.User.Id);
@@ -116,11 +118,47 @@ namespace TimeshareManagement.API.Controllers
                 await _timeshareRepository.Create(timeshare);
                 return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Create Timeshare successfully. Awaiting confirmation." });
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
         }
+        /*[HttpPost]
+        [Route("CreateTimeshare")]
+        *//*[Authorize(Roles = StaticUserRoles.ADMIN)]*//*
+        public async Task<IActionResult> CreateTimeshare([FromForm] TimeshareDTO model)
+        {
+            try
+            {
+                if (model == null || model.Image == null || model.Image.Length == 0)
+                {
+                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object or image is null." });
+                }
+
+                // Save the image file
+                string imagePath = await SaveImage(model.Image);
+
+                var timeshare = new Timeshare
+                {
+                    timeshareName = model.timeshareName,
+                    Image = imagePath,
+                    Price = model.Price,
+                    Address = model.Address,
+                    Detail = model.Detail,
+                    PublicDate = DateTime.Now,
+                    timeshareStatusId = 1, // Assuming a default status
+                    placeId = model.placeId,
+                    Id = model.Id
+                };
+
+                await _timeshareRepository.Create(timeshare);
+                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Create Timeshare successfully. Awaiting confirmation." });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }*/
         [HttpPut]
         [Route("UpdateTimeshare/{id:int}")]
         /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
@@ -340,6 +378,52 @@ namespace TimeshareManagement.API.Controllers
             }).ToList();
 
             return Ok(timeshareWithBookingCount);
+        }
+        private async Task<string> SaveImage(IFormFile file)
+        {
+            try
+            {
+                if (file == null || file.Length == 0)
+                {
+                    throw new ArgumentException("File is null or empty.");
+                }
+
+                // Check file extension
+                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+                var fileExtension = Path.GetExtension(file.FileName).ToLowerInvariant();
+                if (!allowedExtensions.Contains(fileExtension))
+                {
+                    throw new ArgumentException("Invalid file extension.");
+                }
+
+                // Specify the directory where you want to save the image
+                var uploadsDirectory = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
+
+                // Create the directory if it doesn't exist
+                if (!Directory.Exists(uploadsDirectory))
+                {
+                    Directory.CreateDirectory(uploadsDirectory);
+                }
+
+                // Generate a unique file name
+                var fileName = Guid.NewGuid().ToString() + fileExtension;
+
+                // Construct the full file path
+                var filePath = Path.Combine(uploadsDirectory, fileName);
+
+                // Save the file to the specified path
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Return the relative path to the saved image
+                return Path.Combine("uploads", fileName).Replace("\\", "/");
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Error saving image: {ex.Message}");
+            }
         }
     }
 }

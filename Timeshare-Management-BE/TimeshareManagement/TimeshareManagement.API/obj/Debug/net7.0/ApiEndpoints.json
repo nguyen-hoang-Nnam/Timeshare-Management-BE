@@ -518,11 +518,6 @@
         "Name": "timeshare",
         "Type": "TimeshareManagement.Models.Models.Timeshare",
         "IsRequired": true
-      },
-      {
-        "Name": "image",
-        "Type": "Microsoft.AspNetCore.Http.IFormFile",
-        "IsRequired": false
       }
     ],
     "ReturnTypes": []
