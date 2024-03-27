@@ -14,9 +14,13 @@ namespace TimeshareManagement.Models.Models
     {
         [Key]
         public int timeshareId { get; set; }
+        [Required(ErrorMessage = "Timeshare name is required")]
         public string? timeshareName { get; set; }
         public string? Image { get; set; }
+        [Required(ErrorMessage = "Price is required")]
+        [Range(0, int.MaxValue, ErrorMessage = "Price must be a positive value")]
         public int Price { get; set; }
+        [Required(ErrorMessage = "Address is required")]
         public string? Address { get; set; }
         public string? Detail {  get; set; }
         /*public DateTime ExpirationDate { get; set; }*/
