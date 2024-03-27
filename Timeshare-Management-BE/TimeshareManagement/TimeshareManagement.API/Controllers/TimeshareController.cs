@@ -123,42 +123,6 @@ namespace TimeshareManagement.API.Controllers
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
         }
-        /*[HttpPost]
-        [Route("CreateTimeshare")]
-        *//*[Authorize(Roles = StaticUserRoles.ADMIN)]*//*
-        public async Task<IActionResult> CreateTimeshare([FromForm] TimeshareDTO model)
-        {
-            try
-            {
-                if (model == null || model.Image == null || model.Image.Length == 0)
-                {
-                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare object or image is null." });
-                }
-
-                // Save the image file
-                string imagePath = await SaveImage(model.Image);
-
-                var timeshare = new Timeshare
-                {
-                    timeshareName = model.timeshareName,
-                    Image = imagePath,
-                    Price = model.Price,
-                    Address = model.Address,
-                    Detail = model.Detail,
-                    PublicDate = DateTime.Now,
-                    timeshareStatusId = 1, // Assuming a default status
-                    placeId = model.placeId,
-                    Id = model.Id
-                };
-
-                await _timeshareRepository.Create(timeshare);
-                return Ok(new ResponseDTO { Result = timeshare, IsSucceed = true, Message = "Create Timeshare successfully. Awaiting confirmation." });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
-            }
-        }*/
         [HttpPut]
         [Route("UpdateTimeshare/{id:int}")]
         /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
