@@ -109,7 +109,7 @@ namespace TimeshareManagement.API.Controllers
             return Ok(new ResponseDTO { Result = bookingRequest, IsSucceed = true, Message = "Booking created successfully" });
         }
         [HttpDelete]
-        [Route("DeletePlace/{id:int}")]
+        [Route("DeleteBooking/{id:int}")]
         public async Task<IActionResult> DeleteBooking(int id)
         {
             try

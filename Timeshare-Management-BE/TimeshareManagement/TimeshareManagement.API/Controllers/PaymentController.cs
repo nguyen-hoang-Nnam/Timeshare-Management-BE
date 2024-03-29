@@ -69,17 +69,22 @@ namespace TimeshareManagement.API.Controllers
         {
             if (payment == null)
             {
-                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Payment object is null." });
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Payment object is null." });
             }
             /*payment.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1 };*/
             
             if (payment.BookingRequest != null && payment.BookingRequest.bookingRequestId != null)
             {
-                payment.BookingRequest = await _bookingRequestRepository.GetByIdAsync(payment.BookingRequest.bookingRequestId);
+                var bookingRequest = await _bookingRequestRepository.GetByIdAsync(payment.BookingRequest.bookingRequestId);
                 if (payment.BookingRequest == null)
                 {
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found." });
                 }
+                if (bookingRequest.Timeshare == null)
+                {
+                    return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+                }
+                payment.Amount = bookingRequest.Timeshare.Price;
             }
             await _paymentRepository.Create(payment);
 
@@ -102,6 +107,20 @@ namespace TimeshareManagement.API.Controllers
                 {
                     return Ok(new ResponseDTO { Result = payments, IsSucceed = true, Message = "Payment retrieved successfully." });
                 }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
+        [HttpDelete]
+        [Route("DeletePayment/{id:int}")]
+        public async Task<IActionResult> DeletePayment(int id)
+        {
+            try
+            {
+                await _paymentRepository.DeleteById(id);
+                return Ok(new ResponseDTO { Result = null, IsSucceed = true, Message = "Delete Payment successfully" });
             }
             catch (Exception ex)
             {
