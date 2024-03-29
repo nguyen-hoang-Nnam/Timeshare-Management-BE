@@ -144,7 +144,8 @@ namespace TimeshareManagement.API.Controllers
                     existingTimeshare.placeId = timeshare.placeId;
                     existingTimeshare.Id = timeshare.Id;
                     existingTimeshare.timeshareStatusId = timeshare.timeshareStatusId;
-                    existingTimeshare.PublicDate = timeshare.PublicDate;
+                    existingTimeshare.dateFrom = timeshare.dateFrom;
+                    existingTimeshare.dateTo = timeshare.dateTo;
                     //
                     await _timeshareRepository.Update(existingTimeshare);
                 }
@@ -312,9 +313,9 @@ namespace TimeshareManagement.API.Controllers
                 var allTimeshares = await _timeshareRepository.GetAllAsync();
 
                 var activeTimeshares = allTimeshares
-                .Where(t => t.PublicDate <= DateTime.Now && t.PublicDate.AddDays(30) >= DateTime.Now &&
-                        t.timeshareStatusId == 2)
-                .ToList();
+                    .Where(t => t.dateFrom <= DateTime.Now && t.dateTo >= DateTime.Now &&
+                                t.timeshareStatusId == 2)
+                    .ToList();
 
                 return Ok(new ResponseDTO { Result = activeTimeshares, IsSucceed = true, Message = "Active Timeshares retrieved successfully." });
             }

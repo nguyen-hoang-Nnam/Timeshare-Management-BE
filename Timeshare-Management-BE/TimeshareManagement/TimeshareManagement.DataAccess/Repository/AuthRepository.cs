@@ -37,19 +37,6 @@ namespace TimeshareManagement.DataAccess.Repository
 
         public async Task<ResponseDTO> LoginAsync(LoginDTO loginDTO)
         {
-            /*var user = await _userManager.FindByNameAsync(loginDTO.Username);
-
-            if (user is null)
-            {
-                return new ResponseDTO() { IsSucceed = true, Message = "Invalid Credential" };
-            }
-
-            var isPasswordCorrect = await _userManager.CheckPasswordAsync(user, loginDTO.Password);
-
-            if (!isPasswordCorrect)
-            {
-                return new ResponseDTO() { IsSucceed = true, Message = "Invalid Credential" };
-            }*/
 
             ApplicationUser user = null;
 

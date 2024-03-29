@@ -24,7 +24,8 @@ namespace TimeshareManagement.Models.Models
         public string? Address { get; set; }
         public string? Detail {  get; set; }
         /*public DateTime ExpirationDate { get; set; }*/
-        public DateTime PublicDate { get; set; }
+        public DateTime dateTo { get; set; }
+        public DateTime dateFrom { get; set; }
         public int? timeshareStatusId { get; set; }
         [ForeignKey("timeshareStatusId")]
         [JsonIgnore]

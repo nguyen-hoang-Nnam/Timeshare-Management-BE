@@ -252,7 +252,40 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasIndex("timeshareStatusId");
 
-                    b.ToTable("BookingRequests");
+                    b.ToTable("BookingRequests", (string)null);
+                });
+
+            modelBuilder.Entity("TimeshareManagement.Models.Models.Payment", b =>
+                {
+                    b.Property<int>("PaymentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PaymentId"));
+
+                    b.Property<int?>("BookingRequestId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CardNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Expiration")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("PaymentDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PaymentName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("PaymentId");
+
+                    b.HasIndex("BookingRequestId");
+
+                    b.ToTable("Payments", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.Place", b =>
@@ -268,7 +301,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("placeId");
 
-                    b.ToTable("Places");
+                    b.ToTable("Places", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.RoomAmenities", b =>
@@ -285,7 +318,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("roomAmenitiesId");
 
-                    b.ToTable("RoomAmenities");
+                    b.ToTable("RoomAmenities", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.Timeshare", b =>
@@ -297,6 +330,7 @@ namespace TimeshareManagement.DataAccess.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("timeshareId"));
 
                     b.Property<string>("Address")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Detail")
@@ -306,19 +340,23 @@ namespace TimeshareManagement.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<byte[]>("Image")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("PublicDate")
+                    b.Property<DateTime>("dateFrom")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("dateTo")
                         .HasColumnType("datetime2");
 
                     b.Property<int?>("placeId")
                         .HasColumnType("int");
 
                     b.Property<string>("timeshareName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("timeshareStatusId")
@@ -332,7 +370,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasIndex("timeshareStatusId");
 
-                    b.ToTable("Timeshares");
+                    b.ToTable("Timeshares", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.TimeshareDetail", b =>
@@ -351,7 +389,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("timeshareDetailId");
 
-                    b.ToTable("TimesharesDetail");
+                    b.ToTable("TimesharesDetail", (string)null);
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.TimeshareStatus", b =>
@@ -367,7 +405,7 @@ namespace TimeshareManagement.DataAccess.Migrations
 
                     b.HasKey("timeshareStatusId");
 
-                    b.ToTable("TimesharesStatus");
+                    b.ToTable("TimesharesStatus", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -441,6 +479,15 @@ namespace TimeshareManagement.DataAccess.Migrations
                     b.Navigation("TimeshareStatus");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("TimeshareManagement.Models.Models.Payment", b =>
+                {
+                    b.HasOne("TimeshareManagement.Models.Models.BookingRequest", "BookingRequest")
+                        .WithMany()
+                        .HasForeignKey("BookingRequestId");
+
+                    b.Navigation("BookingRequest");
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.Timeshare", b =>

@@ -11,12 +11,13 @@ namespace TimeshareManagement.Models.Models.DTO
     {
         public int timeshareId { get; set; }
         public string? timeshareName { get; set; }
-        public IFormFile? Image { get; set; }
+        public string? Image { get; set; }
         public int Price { get; set; }
         public string? Address { get; set; }
         public string? Detail {  get; set; }
         /*public DateTime ExpirationDate { get; set; }*/
-        public DateTime PublicDate { get; set; }
+        public DateTime dateForm { get; set; }
+        public DateTime dateTo { get; set; }
         /*public TimeshareStatusDTO? TimeshareStatus { get; set; }
         public PlaceDTO? Place { get; set; } 
         public UserDTO? User { get; set; }*/
