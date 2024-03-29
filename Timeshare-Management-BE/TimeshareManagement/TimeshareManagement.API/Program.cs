@@ -85,6 +85,7 @@ builder.Services.AddScoped<IRoomAmenitiesRepository, RoomAmenitiesRepository>();
 /*builder.Services.AddScoped<IRoomDetailRepository, RoomDetailRepository>();*/
 builder.Services.AddScoped<IBookingRequestRepository, BookingRequestRepository>();
 builder.Services.AddScoped<ITimeshareStatusRepository, TimeshareStatusRepository>();
+builder.Services.AddScoped<IPaymentRepository,PaymentRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
 builder.Services.AddSingleton(mapper);
