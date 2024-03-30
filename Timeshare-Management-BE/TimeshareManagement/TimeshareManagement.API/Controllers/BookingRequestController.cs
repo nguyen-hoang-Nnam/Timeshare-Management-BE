@@ -104,6 +104,7 @@ namespace TimeshareManagement.API.Controllers
                     return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Status not found." });
                 }
             }
+            bookingRequest.bookingDate = DateTime.Now;
             await _bookingRequestRepository.Create(bookingRequest);
 
             return Ok(new ResponseDTO { Result = bookingRequest, IsSucceed = true, Message = "Booking created successfully" });
