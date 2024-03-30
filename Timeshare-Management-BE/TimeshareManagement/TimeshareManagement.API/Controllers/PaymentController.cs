@@ -18,14 +18,16 @@ namespace TimeshareManagement.API.Controllers
         private readonly IMapper _mapper;
         private readonly IBookingRequestRepository _bookingRequestRepository;
         private readonly IPaymentRepository _paymentRepository;
+        private readonly ITimeshareRepository _timeshareRepository;
 
-        public PaymentController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IBookingRequestRepository bookingRequestRepository, IPaymentRepository paymentRepository)
+        public PaymentController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IBookingRequestRepository bookingRequestRepository, IPaymentRepository paymentRepository, ITimeshareRepository timeshareRepository)
         {
             _configuration = configuration;
             _db = db;
             _mapper = mapper;
             _bookingRequestRepository = bookingRequestRepository;
             _paymentRepository = paymentRepository;
+            _timeshareRepository = timeshareRepository;
         }
         [HttpGet]
         [Route("GetAllPayment")]
@@ -63,7 +65,7 @@ namespace TimeshareManagement.API.Controllers
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
         }
-        [HttpPost]
+        /*[HttpPost]
         [Route("CreatePayment")]
         public async Task<IActionResult> CreatePayment([FromBody] Payment payment)
         {
@@ -71,21 +73,74 @@ namespace TimeshareManagement.API.Controllers
             {
                 return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Payment object is null." });
             }
-            /*payment.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1 };*/
+            *//*payment.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1 };*//*
             
+
             if (payment.BookingRequest != null && payment.BookingRequest.bookingRequestId != null)
             {
-                var bookingRequest = await _bookingRequestRepository.GetByIdAsync(payment.BookingRequest.bookingRequestId);
-                if (payment.BookingRequest == null)
-                {
-                    return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found." });
-                }
-                if (bookingRequest.Timeshare == null)
-                {
-                    return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
-                }
-                payment.Amount = bookingRequest.Timeshare.Price;
+                payment.BookingRequest = await _bookingRequestRepository.GetByIdAsync(payment.BookingRequest.bookingRequestId);
             }
+            else
+            {
+                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Invalid Booking Request" });
+            }
+
+            if (payment.BookingRequest.Timeshare != null)
+            {
+                payment.Amount = payment.BookingRequest.Timeshare.Price;
+            }
+            else
+            {
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+            }
+            await _paymentRepository.Create(payment);
+
+            return Ok(new ResponseDTO { Result = payment, IsSucceed = true, Message = "Payment created successfully" });
+        }*/
+        [HttpPost]
+        [Route("CreatePayment")]
+        public async Task<IActionResult> CreatePayment([FromBody] Payment payment)
+        {
+            if (payment == null)
+            {
+                return StatusCode(400, new ResponseDTO { Result = null, IsSucceed = false, Message = "Payment object is null." });
+            }
+
+            if (payment.BookingRequestId == null)
+            {
+                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "BookingRequestId is required." });
+            }
+
+            // Retrieve the BookingRequest from the repository
+            var bookingRequest = await _bookingRequestRepository.GetByIdAsync(payment.BookingRequestId.Value);
+
+            // Check if the BookingRequest is null
+            if (bookingRequest == null)
+            {
+                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Invalid Booking Request" });
+            }
+
+            // Ensure that the BookingRequest has an associated Timeshare
+            if (bookingRequest.timeshareId == null)
+            {
+                return StatusCode(404, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+            }
+
+            // Retrieve the Timeshare associated with the BookingRequest
+            var timeshare = await _timeshareRepository.GetByIdAsync(bookingRequest.timeshareId.Value);
+
+            // Check if the Timeshare is null
+            if (timeshare == null)
+            {
+                return StatusCode(404, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+            }
+
+            // Set the payment amount to the Timeshare's price
+            payment.Amount = timeshare.Price;
+
+            // Set the PaymentDate to the current date and time
+            payment.PaymentDate = DateTime.Now;
+            // Create the payment
             await _paymentRepository.Create(payment);
 
             return Ok(new ResponseDTO { Result = payment, IsSucceed = true, Message = "Payment created successfully" });
