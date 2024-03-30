@@ -136,7 +136,7 @@ namespace TimeshareManagement.API.Controllers
             }
 
             // Set the payment amount to the Timeshare's price
-            payment.Amount = timeshare.Price;
+            payment.Amount = timeshare.CalculatePrice(timeshare.dateFrom, timeshare.dateTo);
 
             // Set the PaymentDate to the current date and time
             payment.PaymentDate = DateTime.Now;
