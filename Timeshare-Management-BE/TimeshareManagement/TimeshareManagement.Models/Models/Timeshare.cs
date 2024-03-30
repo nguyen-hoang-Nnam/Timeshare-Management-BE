@@ -42,18 +42,10 @@ namespace TimeshareManagement.Models.Models
 
         public int CalculatePrice(DateTime startDate, DateTime endDate)
         {
-            // Calculate the duration of the booking
             TimeSpan duration = endDate - startDate;
             int numberOfDays = (int)duration.TotalDays;
+            int totalPrice = Price * numberOfDays;
 
-            // Here you can define your logic to calculate the price based on the duration or date range
-            // For example, you could have different price tiers or adjust the price based on specific dates
-
-            // For demonstration, let's say the price is $100 per day
-            int pricePerDay = 200;
-            int totalPrice = pricePerDay * numberOfDays;
-
-            // Return the calculated price
             return totalPrice;
         }
     }
