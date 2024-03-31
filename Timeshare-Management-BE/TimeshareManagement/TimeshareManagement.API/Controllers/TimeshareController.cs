@@ -144,7 +144,7 @@ namespace TimeshareManagement.API.Controllers
                     existingTimeshare.placeId = timeshare.placeId;
                     existingTimeshare.Id = timeshare.Id;
                     existingTimeshare.timeshareStatusId = timeshare.timeshareStatusId;
-                    existingTimeshare.dateFrom = timeshare.dateFrom;
+                    existingTimeshare.dateFrom = DateTime.Now;
                     existingTimeshare.dateTo = timeshare.dateTo;
                     //
                     await _timeshareRepository.Update(existingTimeshare);

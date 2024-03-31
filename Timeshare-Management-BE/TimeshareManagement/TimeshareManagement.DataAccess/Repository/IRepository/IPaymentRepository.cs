@@ -10,5 +10,6 @@ namespace TimeshareManagement.DataAccess.Repository.IRepository
     public interface IPaymentRepository : IRepository<Payment>
     {
         Task<IEnumerable<Payment>> GetByUserId(string userId);
+        Task<IEnumerable<Payment>> GetPaymentByBookingId(int bookingId);
     }
 }
