@@ -28,5 +28,12 @@ namespace TimeshareManagement.DataAccess.Repository
                 .Where(t => t.BookingRequest.User.Id == userId)
                 .ToListAsync();
         }
+        public async Task<IEnumerable<Payment>> GetPaymentByBookingId(int bookingId)
+        {
+            // Assuming there's a property named ApplicationUserId in the Timeshare model
+            return await _db.Payments
+                .Where(t => t.BookingRequest.bookingRequestId == bookingId)
+                .ToListAsync();
+        }
     }
 }

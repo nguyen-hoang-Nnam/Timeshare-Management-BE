@@ -319,6 +319,22 @@
   },
   {
     "ContainingType": "TimeshareManagement.API.Controllers.PaymentController",
+    "Method": "GetPaymentByBookingId",
+    "RelativePath": "api/Payment/GetPaymentByBooingId/{bookingId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookingId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TimeshareManagement.API.Controllers.PaymentController",
     "Method": "GetPaymentById",
     "RelativePath": "api/Payment/GetPaymentById/{id}",
     "HttpMethod": "GET",

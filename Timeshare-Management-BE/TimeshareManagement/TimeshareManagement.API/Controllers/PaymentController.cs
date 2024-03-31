@@ -103,12 +103,12 @@ namespace TimeshareManagement.API.Controllers
         {
             if (payment == null)
             {
-                return StatusCode(400, new ResponseDTO { Result = null, IsSucceed = false, Message = "Payment object is null." });
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Payment object is null." });
             }
 
             if (payment.BookingRequestId == null)
             {
-                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "BookingRequestId is required." });
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "BookingRequestId is required." });
             }
 
             // Retrieve the BookingRequest from the repository
@@ -117,13 +117,13 @@ namespace TimeshareManagement.API.Controllers
             // Check if the BookingRequest is null
             if (bookingRequest == null)
             {
-                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Invalid Booking Request" });
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Invalid Booking Request" });
             }
 
             // Ensure that the BookingRequest has an associated Timeshare
             if (bookingRequest.timeshareId == null)
             {
-                return StatusCode(404, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
             }
 
             // Retrieve the Timeshare associated with the BookingRequest
@@ -132,7 +132,7 @@ namespace TimeshareManagement.API.Controllers
             // Check if the Timeshare is null
             if (timeshare == null)
             {
-                return StatusCode(404, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
             }
 
             // Set the payment amount to the Timeshare's price
@@ -157,6 +157,29 @@ namespace TimeshareManagement.API.Controllers
                 if (payments == null || !payments.Any())
                 {
                     return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "No payment found for the user." });
+                }
+                else
+                {
+                    return Ok(new ResponseDTO { Result = payments, IsSucceed = true, Message = "Payment retrieved successfully." });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
+        [HttpGet]
+        [Route("GetPaymentByBooingId/{bookingId}")]
+        public async Task<IActionResult> GetPaymentByBookingId(int bookingId)
+        {
+            try
+            {
+                // Assuming _timeshareRepository has a method to get timeshares by user ID
+                var payments = await _paymentRepository.GetPaymentByBookingId(bookingId);
+
+                if (payments == null || !payments.Any())
+                {
+                    return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "No payment found for the booking." });
                 }
                 else
                 {
