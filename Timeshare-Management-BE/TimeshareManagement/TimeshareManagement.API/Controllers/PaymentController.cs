@@ -19,8 +19,9 @@ namespace TimeshareManagement.API.Controllers
         private readonly IBookingRequestRepository _bookingRequestRepository;
         private readonly IPaymentRepository _paymentRepository;
         private readonly ITimeshareRepository _timeshareRepository;
+        private readonly IUserRepository _userRepository;
 
-        public PaymentController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IBookingRequestRepository bookingRequestRepository, IPaymentRepository paymentRepository, ITimeshareRepository timeshareRepository)
+        public PaymentController(IConfiguration configuration, ApplicationDbContext db, IMapper mapper, IBookingRequestRepository bookingRequestRepository, IPaymentRepository paymentRepository, ITimeshareRepository timeshareRepository, IUserRepository userRepository)
         {
             _configuration = configuration;
             _db = db;
@@ -28,6 +29,7 @@ namespace TimeshareManagement.API.Controllers
             _bookingRequestRepository = bookingRequestRepository;
             _paymentRepository = paymentRepository;
             _timeshareRepository = timeshareRepository;
+            _userRepository = userRepository;
         }
         [HttpGet]
         [Route("GetAllPayment")]
@@ -135,12 +137,28 @@ namespace TimeshareManagement.API.Controllers
                 return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
             }
 
-            // Set the payment amount to the Timeshare's price
-            payment.Amount = timeshare.CalculatePrice(timeshare.dateFrom, timeshare.dateTo);
+            if (bookingRequest.Id == null)
+            {
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+            }
 
-            // Set the PaymentDate to the current date and time
+            // Retrieve the Timeshare associated with the BookingRequest
+            var user = await _userRepository.GetByIdAsync(bookingRequest.Id);
+
+            // Check if the Timeshare is null
+            if (user == null)
+            {
+                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
+            }
+
+            payment.Amount = timeshare.CalculatePrice(timeshare.dateFrom, timeshare.dateTo);
+            payment.PaymentName = bookingRequest.User.UserName;
+            payment.timeshareName = bookingRequest.Timeshare.timeshareName;
+            payment.userEmail = bookingRequest.User.Email;
             payment.PaymentDate = DateTime.Now;
-            // Create the payment
+            payment.timeshareStatusId = 6;
+
+
             await _paymentRepository.Create(payment);
 
             return Ok(new ResponseDTO { Result = payment, IsSucceed = true, Message = "Payment created successfully" });

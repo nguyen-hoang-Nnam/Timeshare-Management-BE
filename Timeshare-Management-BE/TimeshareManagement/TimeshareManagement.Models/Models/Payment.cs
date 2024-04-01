@@ -15,6 +15,8 @@ namespace TimeshareManagement.Models.Models
         public int PaymentId { get; set; }
         [Required(ErrorMessage = "Payment name is required.")]
         public string PaymentName { get; set; }
+        public string timeshareName { get; set; }
+        public string userEmail { get; set; }
 
         [Required(ErrorMessage = "Payment date is required.")]
         public DateTime PaymentDate { get; set; }
@@ -36,6 +38,10 @@ namespace TimeshareManagement.Models.Models
         [ForeignKey("BookingRequestId")]
         [JsonIgnore]
         public BookingRequest? BookingRequest { get; set; }
+        public int? timeshareStatusId { get; set; }
+        [ForeignKey("timeshareStatusId")]
+        [JsonIgnore]
+        public TimeshareStatus? TimeshareStatus { get; set; }
 
     }
 }
