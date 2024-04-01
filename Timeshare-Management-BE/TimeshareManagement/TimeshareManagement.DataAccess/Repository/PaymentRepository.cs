@@ -30,10 +30,84 @@ namespace TimeshareManagement.DataAccess.Repository
         }
         public async Task<IEnumerable<Payment>> GetPaymentByBookingId(int bookingId)
         {
-            // Assuming there's a property named ApplicationUserId in the Timeshare model
-            return await _db.Payments
-                .Where(t => t.BookingRequest.bookingRequestId == bookingId)
+            var payments = await _db.Payments
+                .Include(p => p.BookingRequest)
+                    .ThenInclude(b => b.User) // Include ApplicationUser
+                .Include(p => p.BookingRequest)
+                    .ThenInclude(b => b.Timeshare) // Include Timeshare
+                .Where(p => p.BookingRequestId == bookingId)
                 .ToListAsync();
+
+            // Convert the anonymous type to Payment type
+            return payments.Select(p => new Payment
+            {
+                PaymentId = p.PaymentId,
+                PaymentDate = p.PaymentDate,
+                Expiration = p.Expiration,
+                CardNumber = p.CardNumber,
+                Amount = p.Amount,
+                CVC = p.CVC,
+                PaymentName = p.PaymentName,
+                userEmail = p.userEmail,
+                timeshareName = p.timeshareName,
+                BookingRequestId = p.BookingRequestId,
+                timeshareStatusId = p.timeshareStatusId,
+                BookingRequest = p.BookingRequest != null ? new BookingRequest
+                {
+                    bookingRequestId = p.BookingRequest.bookingRequestId,
+                    bookingDate = p.BookingRequest.bookingDate,
+                    User = p.BookingRequest.User != null ? new ApplicationUser
+                    {
+                        Id = p.BookingRequest.User.Id,
+                        Name = p.BookingRequest.User.Name,
+                        Email = p.BookingRequest.User.Email,
+                    } : null,
+                    Timeshare = p.BookingRequest.Timeshare != null ? new Timeshare
+                    {
+                        timeshareId = p.BookingRequest.Timeshare.timeshareId,
+                        timeshareName = p.BookingRequest.Timeshare.timeshareName,
+                    } : null
+                } : null
+            });
         }
+        /*public async Task<IEnumerable<Payment>> GetPaymentByBookingId(int bookingId)
+        {
+            // Assuming there's a property named ApplicationUserId in the Timeshare model
+            var payments = await _db.Payments
+                .Include(p => p.BookingRequest)
+                    .ThenInclude(b => b.User) // Include ApplicationUser
+                .Include(p => p.BookingRequest)
+                    .ThenInclude(b => b.Timeshare) // Include Timeshare
+                .Where(p => p.BookingRequestId == bookingId)
+                .ToListAsync();
+
+            // Convert the anonymous type to Payment type
+            return payments.Select(p => new Payment
+            {
+                PaymentId = p.PaymentId,
+                PaymentDate = p.PaymentDate,
+                Expiration = p.Expiration,
+                CardNumber = p.CardNumber,
+                CVC = p.CVC,
+                BookingRequestId = p.BookingRequestId,
+                BookingRequest = new BookingRequest
+                {
+                    bookingRequestId = p.BookingRequest.bookingRequestId,
+                    bookingDate = p.BookingRequest.bookingDate,
+                    User = new ApplicationUser
+                    {
+                        Id = p.BookingRequest.User.Id,
+                        Name = p.BookingRequest.User.Name,
+                        Email = p.BookingRequest.User.Email,
+                    },
+                    Timeshare = new Timeshare
+                    {
+                        timeshareId = p.BookingRequest.Timeshare.timeshareId,
+                        timeshareName = p.BookingRequest.Timeshare.timeshareName,
+                        // Add other properties of Timeshare as needed
+                    }
+                }
+            });
+        }*/
     }
 }

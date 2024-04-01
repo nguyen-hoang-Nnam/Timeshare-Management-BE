@@ -63,6 +63,30 @@ namespace TimeshareManagement.DataAccess.Repository
                 .Where(t => t.User.Id == userId)
                 .ToListAsync();
         }
+        /*public async Task<IEnumerable<object>> GetByUserId(string userId)
+        {
+            return await _db.BookingRequests
+                .Include(b => b.Timeshare)
+                .Include(b => b.User)
+                .Where(b => b.Id == userId)
+                .Select(b => new
+                {
+                    b.bookingRequestId,
+                    b.bookingDate,
+                    b.timeshareStatusId,
+                    TimeshareInfor = new
+                    {
+                        b.Timeshare.timeshareId,
+                        b.Timeshare.timeshareName,
+                        b.Timeshare.Price,
+                    },
+                    UserInfor = new
+                    {
+                        b.User.Id
+                    }
+                })
+                .ToListAsync();
+        }*/
         public async Task<BookingRequest> GetByIdAsync(int id)
         {
             return await _db.BookingRequests.FindAsync(id);

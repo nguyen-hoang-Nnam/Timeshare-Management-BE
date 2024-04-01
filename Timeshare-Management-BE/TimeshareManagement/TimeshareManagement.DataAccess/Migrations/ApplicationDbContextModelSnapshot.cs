@@ -288,9 +288,22 @@ namespace TimeshareManagement.DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("timeshareName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("timeshareStatusId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("userEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("PaymentId");
 
                     b.HasIndex("BookingRequestId");
+
+                    b.HasIndex("timeshareStatusId");
 
                     b.ToTable("Payments");
                 });
@@ -494,7 +507,13 @@ namespace TimeshareManagement.DataAccess.Migrations
                         .WithMany()
                         .HasForeignKey("BookingRequestId");
 
+                    b.HasOne("TimeshareManagement.Models.Models.TimeshareStatus", "TimeshareStatus")
+                        .WithMany()
+                        .HasForeignKey("timeshareStatusId");
+
                     b.Navigation("BookingRequest");
+
+                    b.Navigation("TimeshareStatus");
                 });
 
             modelBuilder.Entity("TimeshareManagement.Models.Models.Timeshare", b =>
