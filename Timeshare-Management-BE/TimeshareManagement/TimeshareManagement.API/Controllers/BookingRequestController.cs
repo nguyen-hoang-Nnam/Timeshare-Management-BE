@@ -337,5 +337,30 @@ namespace TimeshareManagement.API.Controllers
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
         }
+        [HttpPut]
+        [Route("UpdateStatusBooking/{id:int}")]
+        /*[Authorize(Roles = StaticUserRoles.ADMIN)]*/
+        public async Task<IActionResult> UpdateStatusBooking(int id, [FromBody] BookingRequest bookingRequest)
+        {
+            try
+            {
+                var existingBookinng = await _bookingRequestRepository.GetById(id);
+                if (existingBookinng == null)
+                {
+                    return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Booking not found." });
+                }
+                else
+                {
+                    existingBookinng.timeshareStatusId = 6;
+                    //
+                    await _bookingRequestRepository.Update(existingBookinng);
+                }
+                return Ok(new ResponseDTO { Result = bookingRequest, IsSucceed = true, Message = "Update Booking successfully" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
+            }
+        }
     }
 }
