@@ -276,6 +276,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TimeshareManagement.API.Controllers.BookingRequestController",
+    "Method": "UpdateStatusBooking",
+    "RelativePath": "api/BookingRequest/UpdateStatusBooking/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookingRequest",
+        "Type": "TimeshareManagement.Models.Models.BookingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TimeshareManagement.API.Controllers.PaymentController",
     "Method": "CreatePayment",
     "RelativePath": "api/Payment/CreatePayment",
