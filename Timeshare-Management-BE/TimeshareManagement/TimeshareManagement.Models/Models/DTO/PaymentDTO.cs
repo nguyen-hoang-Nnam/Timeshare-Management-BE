@@ -9,9 +9,6 @@ namespace TimeshareManagement.Models.Models.DTO
     public class PaymentDTO
     {
         public int PaymentId { get; set; }
-        public string PaymentName { get; set; }
-        public string timeshareName { get; set; }
-        public string userEmail { get; set; }
         public DateTime paymentDate { get; set; }
         public int Amount { get; set; }
         public string CardNumber { get; set; }

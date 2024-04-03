@@ -47,9 +47,6 @@ namespace TimeshareManagement.DataAccess.Repository
                 CardNumber = p.CardNumber,
                 Amount = p.Amount,
                 CVC = p.CVC,
-                PaymentName = p.PaymentName,
-                userEmail = p.userEmail,
-                timeshareName = p.timeshareName,
                 BookingRequestId = p.BookingRequestId,
                 timeshareStatusId = p.timeshareStatusId,
                 BookingRequest = p.BookingRequest != null ? new BookingRequest

@@ -13,11 +13,6 @@ namespace TimeshareManagement.Models.Models
     {
         [Key]
         public int PaymentId { get; set; }
-        [Required(ErrorMessage = "Payment name is required.")]
-        public string PaymentName { get; set; }
-        public string timeshareName { get; set; }
-        public string userEmail { get; set; }
-
         [Required(ErrorMessage = "Payment date is required.")]
         public DateTime PaymentDate { get; set; }
         [Required(ErrorMessage = "Payment Amount is required.")]
