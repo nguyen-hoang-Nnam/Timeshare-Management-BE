@@ -152,9 +152,6 @@ namespace TimeshareManagement.API.Controllers
             }
 
             payment.Amount = timeshare.CalculatePrice(timeshare.dateFrom, timeshare.dateTo);
-            payment.PaymentName = bookingRequest.User.UserName;
-            payment.timeshareName = bookingRequest.Timeshare.timeshareName;
-            payment.userEmail = bookingRequest.User.Email;
             payment.PaymentDate = DateTime.Now;
             payment.timeshareStatusId = 6;
 
