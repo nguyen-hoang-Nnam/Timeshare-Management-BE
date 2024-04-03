@@ -67,38 +67,6 @@ namespace TimeshareManagement.API.Controllers
                 return StatusCode(500, new ResponseDTO { Result = null, IsSucceed = false, Message = $"Error: {ex.Message}" });
             }
         }
-        /*[HttpPost]
-        [Route("CreatePayment")]
-        public async Task<IActionResult> CreatePayment([FromBody] Payment payment)
-        {
-            if (payment == null)
-            {
-                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Payment object is null." });
-            }
-            *//*payment.TimeshareStatus = new TimeshareStatus { timeshareStatusId = 1 };*//*
-            
-
-            if (payment.BookingRequest != null && payment.BookingRequest.bookingRequestId != null)
-            {
-                payment.BookingRequest = await _bookingRequestRepository.GetByIdAsync(payment.BookingRequest.bookingRequestId);
-            }
-            else
-            {
-                return BadRequest(new ResponseDTO { Result = null, IsSucceed = false, Message = "Invalid Booking Request" });
-            }
-
-            if (payment.BookingRequest.Timeshare != null)
-            {
-                payment.Amount = payment.BookingRequest.Timeshare.Price;
-            }
-            else
-            {
-                return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
-            }
-            await _paymentRepository.Create(payment);
-
-            return Ok(new ResponseDTO { Result = payment, IsSucceed = true, Message = "Payment created successfully" });
-        }*/
         [HttpPost]
         [Route("CreatePayment")]
         public async Task<IActionResult> CreatePayment([FromBody] Payment payment)
@@ -150,6 +118,8 @@ namespace TimeshareManagement.API.Controllers
             {
                 return StatusCode(200, new ResponseDTO { Result = null, IsSucceed = false, Message = "Timeshare not found for the Booking" });
             }
+            bookingRequest.timeshareStatusId = 6;
+            await _bookingRequestRepository.Update(bookingRequest);
 
             payment.Amount = timeshare.CalculatePrice(timeshare.dateFrom, timeshare.dateTo);
             payment.PaymentDate = DateTime.Now;
