@@ -144,7 +144,7 @@ namespace TimeshareManagement.API.Controllers
                     existingTimeshare.placeId = timeshare.placeId;
                     existingTimeshare.Id = timeshare.Id;
                     existingTimeshare.timeshareStatusId = timeshare.timeshareStatusId;
-                    existingTimeshare.dateFrom = DateTime.Now;
+                    existingTimeshare.dateFrom = timeshare.dateFrom;
                     existingTimeshare.dateTo = timeshare.dateTo;
                     //
                     await _timeshareRepository.Update(existingTimeshare);
@@ -313,7 +313,7 @@ namespace TimeshareManagement.API.Controllers
                 var allTimeshares = await _timeshareRepository.GetAllAsync();
 
                 var activeTimeshares = allTimeshares
-                    .Where(t => t.dateFrom <= DateTime.Now && t.dateTo >= DateTime.Now &&
+                    .Where(t => t.dateFrom >= DateTime.Now && t.dateTo >= DateTime.Now &&
                                 t.timeshareStatusId == 2)
                     .ToList();
 
